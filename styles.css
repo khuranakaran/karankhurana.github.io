@@ -2,102 +2,92 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background: #f5f5f5;
 }
 
 header {
-    background: #4CAF50;
-    color: white;
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-}
-
-header p {
-    font-size: 1.2em;
-}
-
-nav {
-    background: #333;
-    overflow: hidden;
 }
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
+    background-color: #444;
+    text-align: center;
 }
 
 nav ul li {
-    margin: 0;
+    display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
-    display: block;
-    padding: 14px 20px;
+    color: #fff;
     text-decoration: none;
-    color: white;
+    padding: 14px 20px;
+    display: inline-block;
 }
 
 nav ul li a:hover {
-    background: #575757;
+    background-color: #555;
 }
 
 section {
-    padding: 20px;
-    margin: 20px;
-    background: white;
-    border-radius: 10px;
+    padding: 2em;
 }
 
 h2 {
-    text-align: center;
-    color: #4CAF50;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5em;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
 }
 
-ul li {
-    background: #f9f9f9;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+.slider-container {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
 }
 
-ul li a {
-    text-decoration: none;
-    color: #4CAF50;
-    display: inline-block;
-    margin-top: 10px;
-    border: 1px solid #4CAF50;
-    padding: 5px;
-    border-radius: 5px;
+.slider-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
 }
 
-ul li a:hover {
-    background: #4CAF50;
+.slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    border: none;
+    cursor: pointer;
+    padding: 1em;
 }
 
-#contact p {
-    text-align: center;
+.slide-button.prev {
+    left: 0;
 }
 
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.slide-button.next {
+    right: 0;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+    }
 }
