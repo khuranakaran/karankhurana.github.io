@@ -49,51 +49,57 @@
         </div>
         <!-- Add other experiences similarly -->
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="slider">
-            <button class="slide-button prev" onclick="moveSlide(-1)">&#10094;</button>
-            <div class="slider-container">
-                <div class="slider-item">
-                    <h3>Mobile Development</h3>
-                    <ul>
-                        <li>Android (9 years)</li>
-                        <li>Kotlin (7 years)</li>
-                        <li>Flutter (3 years)</li>
-                        <li>iOS (2 years)</li>
-                        <li>Swift (2 years)</li>
-                    </ul>
-                </div>
-                <div class="slider-item">
-                    <h3>Technical Leadership</h3>
-                    <ul>
-                        <li>Technical leadership (4 years)</li>
-                        <li>Mentoring (6 years)</li>
-                        <li>Project management (4 years)</li>
-                    </ul>
-                </div>
-                <div class="slider-item">
-                    <h3>Software Development</h3>
-                    <ul>
-                        <li>Java (5 years)</li>
-                        <li>SDLC (6 years)</li>
-                        <li>RESTful APIs (9 years)</li>
-                        <li>GraphQL (2 years)</li>
-                        <li>TypeScript (2 years)</li>
-                    </ul>
-                </div>
-                <div class="slider-item">
-                    <h3>DevOps</h3>
-                    <ul>
-                        <li>Terraform (2 years)</li>
-                        <li>CI/CD (5 years)</li>
-                        <li>Version control (Git) (9 years)</li>
-                    </ul>
-                </div>
-            </div>
-            <button class="slide-button next" onclick="moveSlide(1)">&#10095;</button>
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="dashboard">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'mobile')">Mobile Development</button>
+            <button class="tablinks" onclick="openTab(event, 'tech')">Technical Leadership</button>
+            <button class="tablinks" onclick="openTab(event, 'software')">Software Development</button>
+            <button class="tablinks" onclick="openTab(event, 'devops')">DevOps</button>
         </div>
-    </section>
+        <div id="mobile" class="tabcontent">
+            <h3>Mobile Development</h3>
+            <img src="mobile_dev_image.jpg" alt="Mobile Development Image">
+            <ul>
+                <li>Android (9 years)</li>
+                <li>Kotlin (7 years)</li>
+                <li>Flutter (3 years)</li>
+                <li>iOS (2 years)</li>
+                <li>Swift (2 years)</li>
+            </ul>
+        </div>
+        <div id="tech" class="tabcontent">
+            <h3>Technical Leadership</h3>
+            <img src="tech_leadership_image.jpg" alt="Technical Leadership Image">
+            <ul>
+                <li>Technical leadership (4 years)</li>
+                <li>Mentoring (6 years)</li>
+                <li>Project management (4 years)</li>
+            </ul>
+        </div>
+        <div id="software" class="tabcontent">
+            <h3>Software Development</h3>
+            <img src="software_dev_image.jpg" alt="Software Development Image">
+            <ul>
+                <li>Java (5 years)</li>
+                <li>SDLC (6 years)</li>
+                <li>RESTful APIs (9 years)</li>
+                <li>GraphQL (2 years)</li>
+                <li>TypeScript (2 years)</li>
+            </ul>
+        </div>
+        <div id="devops" class="tabcontent">
+            <h3>DevOps</h3>
+            <img src="devops_image.jpg" alt="DevOps Image">
+            <ul>
+                <li>Terraform (2 years)</li>
+                <li>CI/CD (5 years)</li>
+                <li>Version control (Git) (9 years)</li>
+            </ul>
+        </div>
+    </div>
+</section>
     <section id="projects">
         <h2>Projects</h2>
         <ul>
