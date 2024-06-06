@@ -9,39 +9,52 @@
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <h1>Karan Khurana</h1>
-            <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
-        </div>
+        <h1>Karan Khurana</h1>
+        <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
     </header>
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>I am an experienced software leader with over nine years of expertise in Android, Flutter, and iOS development...</p>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>IIM, Kozhikode</strong> — MBA (June 2023 - June 2025)</p>
-            <p><strong>M.D.U, Rohtak</strong> — Bachelor’s of Technology in Computer Science and Engineering (August 2011 - June 2015)</p>
-        </section>
-        <section id="experience">
-            <h2>Experience</h2>
-            <!-- Experience details here -->
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am an experienced software leader with over nine years of expertise in Android, Flutter, and iOS development. Proven track record in client engagement and adept team leadership. Currently advancing my skills with an MBA program at IIM, Kozhikode, to further augment my strategic acumen and leadership capabilities.
+        </p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>IIM, Kozhikode</strong> — MBA (June 2023 - June 2025)</p>
+        <p><strong>M.D.U, Rohtak</strong> — Bachelor’s of Technology in Computer Science and Engineering (August 2011 - June 2015)</p>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="job">
+            <h3>Lendingkart, Bangalore</h3>
+            <p><strong>Role:</strong> Team Lead</p>
+            <p><strong>Duration:</strong> September 2022 - Present</p>
+            <p>Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.</p>
+        </div>
+        <div class="job">
+            <h3>Nagarro, Gurgaon</h3>
+            <p><strong>Role:</strong> Senior Engineer</p>
+            <p><strong>Duration:</strong> February 2021 - June 2022</p>
+            <p>Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.</p>
+        </div>
+        <!-- Add other experiences similarly -->
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="slider">
+            <button class="slide-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-container">
+                <div class="slider-item">
                     <h3>Mobile Development</h3>
                     <ul>
                         <li>Android (9 years)</li>
@@ -51,7 +64,7 @@
                         <li>Swift (2 years)</li>
                     </ul>
                 </div>
-                <div class="skill-category">
+                <div class="slider-item">
                     <h3>Technical Leadership</h3>
                     <ul>
                         <li>Technical leadership (4 years)</li>
@@ -59,7 +72,7 @@
                         <li>Project management (4 years)</li>
                     </ul>
                 </div>
-                <div class="skill-category">
+                <div class="slider-item">
                     <h3>Software Development</h3>
                     <ul>
                         <li>Java (5 years)</li>
@@ -69,7 +82,7 @@
                         <li>TypeScript (2 years)</li>
                     </ul>
                 </div>
-                <div class="skill-category">
+                <div class="slider-item">
                     <h3>DevOps</h3>
                     <ul>
                         <li>Terraform (2 years)</li>
@@ -78,22 +91,27 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>Customer Journey:</strong> A platform redirecting declined business loan applicants to other loan options...</li>
-                <li><strong>Collec10:</strong> A web and mobile application facilitating efficient communication between calling agents and clients...</li>
-                <!-- Add other projects -->
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
-            <p><strong>Phone:</strong> +91 8860914345</p>
-            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
-        </section>
-    </main>
+            <button class="slide-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <strong>Customer Journey:</strong> A platform redirecting declined business loan applicants to other loan options, built with Flutter for mobile and web.
+            </li>
+            <li>
+                <strong>Collec10:</strong> A web and mobile application facilitating efficient communication between calling agents and clients.
+            </li>
+            <!-- Add other projects similarly -->
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8860914345</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
+    </section>
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
     </footer>
