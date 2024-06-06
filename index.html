@@ -3,57 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan Khurana - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Karan Khurana Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Karan Khurana</h1>
-        <p>Android Developer | Technical Lead</p>
+        <h2>Android Developer</h2>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am an experienced Android Developer with over 9 years of expertise in creating high-performance mobile applications. I have a strong background in Android development, Java, and Kotlin. I am proficient in using Android SDK, Android Studio, and other related tools. Currently, I am leading a team of 8 developers, mentoring and guiding them through various projects.
-        </p>
+    <section id="personal-info">
+        <h3>Personal Info</h3>
+        <p><strong>Phone:</strong> +91 96018 33544</p>
+        <p><strong>Email:</strong> khuranakaran@gmail.com</p>
+        <p><strong>Address:</strong> Bengaluru, India</p>
+        <p><strong>Languages:</strong> English, Hindi</p>
+        <p><strong>Freelance:</strong> Available</p>
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h3>Skills</h3>
         <ul>
             <li>Android Development</li>
-            <li>Java</li>
             <li>Kotlin</li>
             <li>RxJava</li>
             <li>Dagger 2</li>
+            <li>Android Architecture Components</li>
+            <li>MVVM</li>
+            <li>CI/CD</li>
             <li>RESTful APIs</li>
-            <li>JSON</li>
-            <li>Android SDK</li>
-            <li>Android Studio</li>
-            <li>CI/CD with CircleCI and GitHub Actions</li>
-            <li>Git Version Control</li>
+            <li>Firebase</li>
+            <li>Object-Oriented Programming</li>
         </ul>
     </section>
 
     <section id="experience">
-        <h2>Experience</h2>
-        <h3>Technical Lead at Lendingkart</h3>
-        <p>Leading a team of 8 developers, working on scaling projects from scratch to deployment and maintenance. Collaborated with cross-functional teams to design, develop, and maintain innovative mobile applications.</p>
-
-        <h3>Senior Android Developer at XYZ Company</h3>
-        <p>Developed and maintained high-performance Android applications. Worked closely with designers and product managers to deliver seamless user experiences.</p>
+        <h3>Experience</h3>
+        <div class="experience-item">
+            <h4>Senior Android Developer - Lendingkart</h4>
+            <p>2019 - Present</p>
+            <p>Leading a team of 8 developers, responsible for developing and maintaining high-performance mobile applications.</p>
+        </div>
+        <div class="experience-item">
+            <h4>Android Developer - Arihant Solutions</h4>
+            <p>2013 - 2018</p>
+            <p>Worked on multiple projects, building Android applications from scratch to deployment and maintenance.</p>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <p>Bachelor of Technology in Computer Science from XYZ University</p>
+    <section id="portfolio">
+        <h3>Development</h3>
+        <div class="portfolio-item">
+            <h4>Reward NFT System</h4>
+            <p>Introduced NFTs as a new way for employees to be rewarded for excellent performance, functioning as a crypto-based version of kudos that unlock additional benefits.</p>
+            <a href="#">Go to Website</a>
+            <a href="#">Download APK</a>
+        </div>
+        <div class="portfolio-item">
+            <h4>JBavaji</h4>
+            <p>Portfolio application developed in cross-platform Flutter technology.</p>
+            <a href="#">Go to Website</a>
+            <a href="#">Go to Play Store</a>
+        </div>
+        <div class="portfolio-item">
+            <h4>Ashapura Enterprise Ubon Store</h4>
+            <p>Dealer of Jamnagar district Ubon product with 10,000+ users.</p>
+            <a href="#">Go to Play Store</a>
+        </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:karan.khurana@example.com">karan.khurana@example.com</a></p>
-        <p>Phone: 8860914345</p>
+        <h3>Contact</h3>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </section>
 
     <footer>
