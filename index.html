@@ -42,10 +42,21 @@
             border-top: none;
         }
 
-        .tabcontent img {
-            max-width: 100%;
-            height: auto;
+        .skill-item {
+            display: flex;
+            align-items: center;
             margin-bottom: 10px;
+        }
+
+        .skill-item img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .skill-item p {
+            margin: 0;
+            font-size: 16px;
         }
         /* End of Tab View CSS */
     </style>
@@ -88,43 +99,38 @@
             </div>
             <div id="mobile" class="tabcontent">
                 <h3>Mobile Development</h3>
-                <img src="mobile_dev_image.jpg" alt="Mobile Development Image">
-                <ul>
-                    <li>Android (9 years)</li>
-                    <li>Kotlin (7 years)</li>
-                    <li>Flutter (3 years)</li>
-                    <li>iOS (2 years)</li>
-                    <li>Swift (2 years)</li>
-                </ul>
+                <div class="skill-item">
+                    <img src="android_image.jpg" alt="Android">
+                    <p>Android</p>
+                </div>
+                <div class="skill-item">
+                    <img src="kotlin_image.jpg" alt="Kotlin">
+                    <p>Kotlin</p>
+                </div>
+                <div class="skill-item">
+                    <img src="flutter_image.jpg" alt="Flutter">
+                    <p>Flutter</p>
+                </div>
+                <div class="skill-item">
+                    <img src="ios_image.jpg" alt="iOS">
+                    <p>iOS</p>
+                </div>
+                <div class="skill-item">
+                    <img src="swift_image.jpg" alt="Swift">
+                    <p>Swift</p>
+                </div>
             </div>
             <div id="tech" class="tabcontent">
                 <h3>Technical Leadership</h3>
-                <img src="tech_leadership_image.jpg" alt="Technical Leadership Image">
-                <ul>
-                    <li>Technical leadership (4 years)</li>
-                    <li>Mentoring (6 years)</li>
-                    <li>Project management (4 years)</li>
-                </ul>
+                <!-- Skills for Technical Leadership -->
             </div>
             <div id="software" class="tabcontent">
                 <h3>Software Development</h3>
-                <img src="software_dev_image.jpg" alt="Software Development Image">
-                <ul>
-                    <li>Java (5 years)</li>
-                    <li>SDLC (6 years)</li>
-                    <li>RESTful APIs (9 years)</li>
-                    <li>GraphQL (2 years)</li>
-                    <li>TypeScript (2 years)</li>
-                </ul>
+                <!-- Skills for Software Development -->
             </div>
             <div id="devops" class="tabcontent">
                 <h3>DevOps</h3>
-                <img src="devops_image.jpg" alt="DevOps Image">
-                <ul>
-                    <li>Terraform (2 years)</li>
-                    <li>CI/CD (5 years)</li>
-                    <li>Version control (Git) (9 years)</li>
-                </ul>
+                <!-- Skills for DevOps -->
             </div>
         </div>
     </section>
