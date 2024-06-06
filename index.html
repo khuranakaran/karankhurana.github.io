@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan Khurana - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Karan Khurana</h1>
-        <p>Seasoned software leader with nine years of extensive expertise in Android, Flutter, and iOS development.</p>
+        <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
     </header>
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -23,90 +25,92 @@
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am an experienced software leader with over 9 years of expertise in Android, Flutter, and iOS development. I have a strong background in mobile development, technical leadership, and mentoring. Currently, I am pursuing an MBA from IIM Kozhikode to further enhance my strategic acumen and leadership capabilities.
+            I am an experienced software leader with over nine years of expertise in Android, Flutter, and iOS development. Proven track record in client engagement and adept team leadership. Currently advancing my skills with an MBA program at IIM, Kozhikode, to further augment my strategic acumen and leadership capabilities.
         </p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p><strong>IIM, Kozhikode</strong> — MBA (June 2023 - June 2025)</p>
+        <p><strong>M.D.U, Rohtak</strong> — Bachelor’s of Technology in Computer Science and Engineering (August 2011 - June 2015)</p>
     </section>
     <section id="experience">
         <h2>Experience</h2>
-        <h3>Team Lead at Lendingkart, Bangalore</h3>
-        <p>
-            <strong>Duration:</strong> September 2022 - Present<br>
-            Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.
-        </p>
-        <h3>Senior Engineer at Nagarro, Gurgaon</h3>
-        <p>
-            <strong>Duration:</strong> February 2021 - June 2022<br>
-            Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.
-        </p>
-        <h3>Senior Engineer at Mobile Programming LLC, Gurgaon</h3>
-        <p>
-            <strong>Duration:</strong> October 2019 - February 2021<br>
-            Leading the development of Android applications, including client engagement to gather project requirements and ensure successful delivery. Additionally, overseeing and managing a team to ensure project goals are met effectively.
-        </p>
-        <!-- Add more experience sections as needed -->
+        <div class="job">
+            <h3>Lendingkart, Bangalore</h3>
+            <p><strong>Role:</strong> Team Lead</p>
+            <p><strong>Duration:</strong> September 2022 - Present</p>
+            <p>Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.</p>
+        </div>
+        <div class="job">
+            <h3>Nagarro, Gurgaon</h3>
+            <p><strong>Role:</strong> Senior Engineer</p>
+            <p><strong>Duration:</strong> February 2021 - June 2022</p>
+            <p>Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.</p>
+        </div>
+        <!-- Add other experiences similarly -->
     </section>
     <section id="skills">
         <h2>Skills</h2>
-        <ul>
-            <li>Mobile development (9 years)</li>
-            <li>Android (9 years)</li>
-            <li>Kotlin (7 years)</li>
-            <li>Flutter (3 years)</li>
-            <li>Java (5 years)</li>
-            <li>Technical leadership (4 years)</li>
-            <li>Mentoring (6 years)</li>
-            <li>Clean Architecture (6 years)</li>
-            <li>Jetpack Compose (2 years)</li>
-            <li>Bluetooth (2 years)</li>
-            <li>Firmware management (2 years)</li>
-            <li>AAOS middleware (2 years)</li>
-            <li>Swift (2 years)</li>
-            <li>SDLC (6 years)</li>
-            <li>Integrating Android applications with back-end services (9 years)</li>
-            <li>Terraform, GraphQL, TypeScript (2 years)</li>
-            <li>Lambda, API Gateway (2 years)</li>
-            <li>Play Store management (9 years)</li>
-            <li>Version control (Git) (9 years)</li>
-            <li>RESTful APIs (9 years)</li>
-            <li>Agile methodologies (7 years)</li>
-            <li>CircleCI, GitHub Actions, Azure Pipelines (5 years)</li>
-            <li>UI and product development</li>
-            <li>UI architecture (9 years)</li>
-            <li>UI performance (9 years)</li>
-            <li>Project management (4 years)</li>
-        </ul>
+        <div class="slider">
+            <button class="slide-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slider-container">
+                <div class="slider-item">
+                    <h3>Mobile Development</h3>
+                    <ul>
+                        <li>Android (9 years)</li>
+                        <li>Kotlin (7 years)</li>
+                        <li>Flutter (3 years)</li>
+                        <li>iOS (2 years)</li>
+                        <li>Swift (2 years)</li>
+                    </ul>
+                </div>
+                <div class="slider-item">
+                    <h3>Technical Leadership</h3>
+                    <ul>
+                        <li>Technical leadership (4 years)</li>
+                        <li>Mentoring (6 years)</li>
+                        <li>Project management (4 years)</li>
+                    </ul>
+                </div>
+                <div class="slider-item">
+                    <h3>Software Development</h3>
+                    <ul>
+                        <li>Java (5 years)</li>
+                        <li>SDLC (6 years)</li>
+                        <li>RESTful APIs (9 years)</li>
+                        <li>GraphQL (2 years)</li>
+                        <li>TypeScript (2 years)</li>
+                    </ul>
+                </div>
+                <div class="slider-item">
+                    <h3>DevOps</h3>
+                    <ul>
+                        <li>Terraform (2 years)</li>
+                        <li>CI/CD (5 years)</li>
+                        <li>Version control (Git) (9 years)</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="slide-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
     </section>
     <section id="projects">
         <h2>Projects</h2>
-        <p>Here are some of the projects I have worked on:</p>
         <ul>
             <li>
-                <strong>Customer Journey:</strong> Android, Web and mobile web application for loan redirection.
-                <a href="#">Go to Website</a>
+                <strong>Customer Journey:</strong> A platform redirecting declined business loan applicants to other loan options, built with Flutter for mobile and web.
             </li>
             <li>
-                <strong>Collec10:</strong> Web and mobile web application for calling agents.
-                <a href="#">Go to Website</a>
+                <strong>Collec10:</strong> A web and mobile application facilitating efficient communication between calling agents and clients.
             </li>
-            <li>
-                <strong>Lender-onboarding:</strong> Web and mobile web application for lender connections.
-                <a href="#">Go to Website</a>
-            </li>
-            <li>
-                <strong>Buddy:</strong> Android and Web Application for connecting individuals.
-                <a href="#">Go to Website</a>
-            </li>
-            <!-- Add more projects as needed -->
+            <!-- Add other projects similarly -->
         </ul>
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p>
-            <strong>Email:</strong> khuranakaran18@gmail.com <br>
-            <strong>Phone:</strong> +91 8860914345 <br>
-            <strong>Address:</strong> 6071, Sobha Daffodils, HSR Layout, Bengaluru, Karnataka, 560102 <br>
-            <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">linkedin.com/in/kkhuranaa</a>
-        </p>
+        <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8860914345</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
     </section>
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
