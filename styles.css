@@ -2,82 +2,21 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background-color: #f4f4f4;
 }
-
 header {
-    background: #4CAF50;
+    background-color: #333;
     color: white;
-    padding: 1em 0;
     text-align: center;
+    padding: 1em 0;
 }
-
-h1, h2 {
-    margin: 0.5em 0;
-}
-
 section {
-    margin: 2em auto;
-    padding: 1em;
+    padding: 2em;
+    margin: 1em auto;
     max-width: 800px;
     background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h3 {
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 0.5em;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    background: #e0e0e0;
-    margin: 0.5em 0;
-    padding: 0.5em;
-    border-radius: 5px;
-}
-
-.experience-item, .portfolio-item {
-    margin-bottom: 1em;
-}
-
-.portfolio-item a {
-    display: inline-block;
-    margin-right: 1em;
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-form {
-    display: grid;
-    gap: 1em;
-}
-
-form label {
-    font-weight: bold;
-}
-
-form input, form textarea, form button {
-    padding: 0.5em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    background: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background: #4CAF50;
-    color: white;
+h1, h2 {
+    color: #333;
 }
