@@ -5,7 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Karan Khurana - Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
+    <style>
+        /* CSS for Tab View */
+        .tab {
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #007bff;
+            margin-bottom: 20px;
+        }
+
+        .tab button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: 0.3s;
+            font-size: 18px;
+            margin: 0 10px;
+            color: #555;
+        }
+
+        .tab button:hover {
+            color: #007bff;
+        }
+
+        .tab button.active {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-top: none;
+        }
+
+        .tabcontent img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        /* End of Tab View CSS */
+    </style>
 </head>
 <body>
     <header>
@@ -24,102 +67,92 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <p>
-            I am an experienced software leader with over nine years of expertise in Android, Flutter, and iOS development. Proven track record in client engagement and adept team leadership. Currently advancing my skills with an MBA program at IIM, Kozhikode, to further augment my strategic acumen and leadership capabilities.
-        </p>
+        <!-- About Me content -->
     </section>
     <section id="education">
         <h2>Education</h2>
-        <p><strong>IIM, Kozhikode</strong> — MBA (June 2023 - June 2025)</p>
-        <p><strong>M.D.U, Rohtak</strong> — Bachelor’s of Technology in Computer Science and Engineering (August 2011 - June 2015)</p>
+        <!-- Education content -->
     </section>
     <section id="experience">
         <h2>Experience</h2>
-        <div class="job">
-            <h3>Lendingkart, Bangalore</h3>
-            <p><strong>Role:</strong> Team Lead</p>
-            <p><strong>Duration:</strong> September 2022 - Present</p>
-            <p>Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.</p>
-        </div>
-        <div class="job">
-            <h3>Nagarro, Gurgaon</h3>
-            <p><strong>Role:</strong> Senior Engineer</p>
-            <p><strong>Duration:</strong> February 2021 - June 2022</p>
-            <p>Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.</p>
-        </div>
-        <!-- Add other experiences similarly -->
+        <!-- Experience content -->
     </section>
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="dashboard">
-        <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'mobile')">Mobile Development</button>
-            <button class="tablinks" onclick="openTab(event, 'tech')">Technical Leadership</button>
-            <button class="tablinks" onclick="openTab(event, 'software')">Software Development</button>
-            <button class="tablinks" onclick="openTab(event, 'devops')">DevOps</button>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="dashboard">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'mobile')">Mobile Development</button>
+                <button class="tablinks" onclick="openTab(event, 'tech')">Technical Leadership</button>
+                <button class="tablinks" onclick="openTab(event, 'software')">Software Development</button>
+                <button class="tablinks" onclick="openTab(event, 'devops')">DevOps</button>
+            </div>
+            <div id="mobile" class="tabcontent">
+                <h3>Mobile Development</h3>
+                <img src="mobile_dev_image.jpg" alt="Mobile Development Image">
+                <ul>
+                    <li>Android (9 years)</li>
+                    <li>Kotlin (7 years)</li>
+                    <li>Flutter (3 years)</li>
+                    <li>iOS (2 years)</li>
+                    <li>Swift (2 years)</li>
+                </ul>
+            </div>
+            <div id="tech" class="tabcontent">
+                <h3>Technical Leadership</h3>
+                <img src="tech_leadership_image.jpg" alt="Technical Leadership Image">
+                <ul>
+                    <li>Technical leadership (4 years)</li>
+                    <li>Mentoring (6 years)</li>
+                    <li>Project management (4 years)</li>
+                </ul>
+            </div>
+            <div id="software" class="tabcontent">
+                <h3>Software Development</h3>
+                <img src="software_dev_image.jpg" alt="Software Development Image">
+                <ul>
+                    <li>Java (5 years)</li>
+                    <li>SDLC (6 years)</li>
+                    <li>RESTful APIs (9 years)</li>
+                    <li>GraphQL (2 years)</li>
+                    <li>TypeScript (2 years)</li>
+                </ul>
+            </div>
+            <div id="devops" class="tabcontent">
+                <h3>DevOps</h3>
+                <img src="devops_image.jpg" alt="DevOps Image">
+                <ul>
+                    <li>Terraform (2 years)</li>
+                    <li>CI/CD (5 years)</li>
+                    <li>Version control (Git) (9 years)</li>
+                </ul>
+            </div>
         </div>
-        <div id="mobile" class="tabcontent">
-            <h3>Mobile Development</h3>
-            <img src="mobile_dev_image.jpg" alt="Mobile Development Image">
-            <ul>
-                <li>Android (9 years)</li>
-                <li>Kotlin (7 years)</li>
-                <li>Flutter (3 years)</li>
-                <li>iOS (2 years)</li>
-                <li>Swift (2 years)</li>
-            </ul>
-        </div>
-        <div id="tech" class="tabcontent">
-            <h3>Technical Leadership</h3>
-            <img src="tech_leadership_image.jpg" alt="Technical Leadership Image">
-            <ul>
-                <li>Technical leadership (4 years)</li>
-                <li>Mentoring (6 years)</li>
-                <li>Project management (4 years)</li>
-            </ul>
-        </div>
-        <div id="software" class="tabcontent">
-            <h3>Software Development</h3>
-            <img src="software_dev_image.jpg" alt="Software Development Image">
-            <ul>
-                <li>Java (5 years)</li>
-                <li>SDLC (6 years)</li>
-                <li>RESTful APIs (9 years)</li>
-                <li>GraphQL (2 years)</li>
-                <li>TypeScript (2 years)</li>
-            </ul>
-        </div>
-        <div id="devops" class="tabcontent">
-            <h3>DevOps</h3>
-            <img src="devops_image.jpg" alt="DevOps Image">
-            <ul>
-                <li>Terraform (2 years)</li>
-                <li>CI/CD (5 years)</li>
-                <li>Version control (Git) (9 years)</li>
-            </ul>
-        </div>
-    </div>
-</section>
+    </section>
     <section id="projects">
         <h2>Projects</h2>
-        <ul>
-            <li>
-                <strong>Customer Journey:</strong> A platform redirecting declined business loan applicants to other loan options, built with Flutter for mobile and web.
-            </li>
-            <li>
-                <strong>Collec10:</strong> A web and mobile application facilitating efficient communication between calling agents and clients.
-            </li>
-            <!-- Add other projects similarly -->
-        </ul>
+        <!-- Projects content -->
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
-        <p><strong>Phone:</strong> +91 8860914345</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
+        <!-- Contact content -->
     </section>
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
     </footer>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
