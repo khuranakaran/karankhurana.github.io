@@ -222,20 +222,62 @@
     <section id="contact">
     <h2>Contact</h2>
     <div class="contact-info">
+        <!-- Email -->
         <div class="contact-item">
-            <img src="images/mail.png" alt="Email">
-            <p class="email">khuranakaran18@gmail.com</p>
+            <img src="images/email_icon.png" alt="Email">
+            <p>Email address: khuranakaran18@gmail.com</p>
+            <img src="images/copy_icon.png" alt="Copy" class="copy-icon" onclick="copyEmail()">
         </div>
+        <!-- Phone -->
         <div class="contact-item">
-            <img src="images/phone.png" alt="Phone">
-            <p class="phone">+91 8860914345</p>
+            <img src="images/phone_icon.png" alt="Phone">
+            <p>Phone: +91 8860914345</p>
         </div>
+        <!-- LinkedIn -->
         <div class="contact-item">
             <img src="images/linkedin_icon.png" alt="LinkedIn">
-            <p><a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
+            <p><a href="https://www.linkedin.com/in/kkhuranaa/">LinkedIn Profile</a></p>
         </div>
     </div>
 </section>
+
+<script>
+    // Function to copy email to clipboard
+    function copyEmail() {
+        var email = 'khuranakaran18@gmail.com'; // Change this to your email
+        navigator.clipboard.writeText(email).then(function() {
+            alert('Email copied to clipboard');
+        }, function(err) {
+            console.error('Could not copy email: ', err);
+        });
+    }
+</script>
+
+<style>
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-item img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+
+    .copy-icon {
+        cursor: pointer;
+    }
+</style>
+
 
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
