@@ -220,11 +220,12 @@
         <!-- Projects content -->
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
-        <p><strong>Phone:</strong> +91 8860914345</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
-    </section>
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> khuranakaran18@gmail.com <button onclick="copyToClipboard('khuranakaran18@gmail.com')">Copy</button></p>
+    <p><strong>Phone:</strong> +91 8860914345 <button onclick="callPhoneNumber('+918860914345')">Call</button></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
+</section>
+
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
     </footer>
@@ -246,6 +247,23 @@
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".tablinks").click();
         });
+
+        <script>
+    function copyToClipboard(text) {
+        navigator.clipboard.writeText(text)
+            .then(() => {
+                alert('Email copied to clipboard!');
+            })
+            .catch(err => {
+                console.error('Failed to copy: ', err);
+            });
+    }
+
+    function callPhoneNumber(phoneNumber) {
+        window.location.href = 'tel:' + phoneNumber;
+    }
+</script>
+
     </script>
 </body>
 </html>
