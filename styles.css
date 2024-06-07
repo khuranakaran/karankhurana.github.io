@@ -211,9 +211,8 @@ body.fixed-header-padding {
     top: 0;
     width: 100%;
     background-color: #fff;
-    transition: top 0.3s ease, font-size 0.3s ease;
     z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+    transition: top 0.3s ease, font-size 0.3s ease;
 }
 
 .header-content {
@@ -230,14 +229,6 @@ body.fixed-header-padding {
 
 .header-subtext {
     font-size: 16px;
-}
-
-#main-header.collapsed {
-    top: 0; /* Keep the header at the top even when collapsed */
-}
-
-#main-header.collapsed .header-text {
-    font-size: 14px; /* Adjust the font size of the collapsed header */
 }
 
 #main-nav {
