@@ -232,7 +232,7 @@
         <div class="contact-item">
             <img src="images/ic_phone.png" alt="Phone">
             <p>+918860914345</p>
-            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyEmail()">
+            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyPhone()">
         </div>
         <!-- LinkedIn -->
         <div class="contact-item">
@@ -259,6 +259,12 @@
         }, function(err) {
             console.error('Could not copy phone: ', err);
         });
+    }
+
+    // Function to call phone number
+    function callPhoneNumber() {
+        var phone = document.querySelector('.phone').innerText;
+        window.location.href = 'tel:' + phone;
     }
 
     function openLinkedIn() {
@@ -318,23 +324,5 @@
             document.querySelector(".tablinks").click();
         });
     </script>
-    <script>
-    // Function to copy email to clipboard
-    function copyEmail() {
-        var email = document.querySelector('.email').innerText;
-        navigator.clipboard.writeText(email).then(function() {
-            alert('Email copied to clipboard');
-        }, function(err) {
-            console.error('Could not copy email: ', err);
-        });
-    }
-
-    // Function to call phone number
-    function callPhoneNumber() {
-        var phone = document.querySelector('.phone').innerText;
-        window.location.href = 'tel:' + phone;
-    }
-</script>
-
 </body>
 </html>
