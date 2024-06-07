@@ -98,3 +98,75 @@ body.fixed-header-padding {
     text-decoration: none;
     font-size: 16px;
 }
+
+/* CSS for Tab View */
+        .tab {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .tab button {
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: 0.3s;
+            font-size: 18px;
+            margin: 0 10px;
+            color: #555;
+        }
+
+        .tab button:hover {
+            color: #007bff;
+        }
+
+        .tab button.active {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 20px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .skill-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background-color: #f7f7f7;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            width: 120px;
+        }
+
+        .skill-item img {
+            width: 50px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .skill-item p {
+            margin: 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .skill-item:hover {
+            transform: translateY(-10px);
+        }
+        /* End of Tab View CSS */
+
