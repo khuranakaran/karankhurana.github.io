@@ -134,6 +134,64 @@ h2 {
     margin-bottom: 10px;
 }
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa; /* Change as needed */
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: height 0.3s, padding 0.3s;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    margin-right: 20px;
+}
+
+header h1, header p {
+    margin: 0;
+}
+
+nav {
+    background-color: #343a40; /* Change as needed */
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-content {
+    margin-top: 150px; /* Adjust according to the header height */
+}
+
+
 /* End of Tab View CSS */
 
 
