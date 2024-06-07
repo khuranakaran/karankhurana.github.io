@@ -210,7 +210,7 @@ body.fixed-header-padding {
     position: fixed;
     width: 100%;
     background-color: #fff;
-    transition: height 0.3s ease, font-size 0.3s ease;
+    transition: top 0.3s ease, font-size 0.3s ease;
     z-index: 1000;
 }
 
@@ -231,11 +231,11 @@ body.fixed-header-padding {
 }
 
 #main-header.collapsed {
-    height: 50px; /* Adjust height as needed */
+    top: -50px; /* Adjust the height of the collapsed header */
 }
 
 #main-header.collapsed .header-text {
-    font-size: 14px; /* Adjust font size as needed */
+    font-size: 14px; /* Adjust the font size of the collapsed header */
 }
 
 #main-nav {
