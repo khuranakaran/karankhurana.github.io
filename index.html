@@ -80,9 +80,14 @@
 </head>
 <body>
     <header>
-        <h1>Karan Khurana</h1>
-        <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
-    </header>
+    <div class="header-content">
+        <img src="images/KaranKhurana.JPG" alt="Profile Picture" class="profile-picture">
+        <div class="header-text">
+            <h1>Karan Khurana</h1>
+            <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
+        </div>
+    </div>
+</header>
     <nav>
         <ul>
             <li><a href="#about">About Me</a></li>
@@ -323,6 +328,19 @@
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".tablinks").click();
         });
+
+        window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        document.querySelector("header").style.height = "80px"; /* Adjust height as needed */
+        document.querySelector("header").style.padding = "10px";
+    } else {
+        document.querySelector("header").style.height = "auto";
+        document.querySelector("header").style.padding = "20px";
+    }
+}
+
     </script>
 </body>
 </html>
