@@ -220,11 +220,23 @@
         <!-- Projects content -->
     </section>
     <section id="contact">
-        <h2>Contact</h2>
-        <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
-        <p><strong>Phone:</strong> +91 8860914345</p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
-    </section>
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <div class="contact-item">
+            <img src="images/email_icon.png" alt="Email">
+            <p class="email">khuranakaran18@gmail.com</p>
+        </div>
+        <div class="contact-item">
+            <img src="images/phone_icon.png" alt="Phone">
+            <p class="phone">+91 8860914345</p>
+        </div>
+        <div class="contact-item">
+            <img src="images/linkedin_icon.png" alt="LinkedIn">
+            <p><a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
+        </div>
+    </div>
+</section>
+
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
     </footer>
@@ -247,5 +259,23 @@
             document.querySelector(".tablinks").click();
         });
     </script>
+    <script>
+    // Function to copy email to clipboard
+    function copyEmail() {
+        var email = document.querySelector('.email').innerText;
+        navigator.clipboard.writeText(email).then(function() {
+            alert('Email copied to clipboard');
+        }, function(err) {
+            console.error('Could not copy email: ', err);
+        });
+    }
+
+    // Function to call phone number
+    function callPhoneNumber() {
+        var phone = document.querySelector('.phone').innerText;
+        window.location.href = 'tel:' + phone;
+    }
+</script>
+
 </body>
 </html>
