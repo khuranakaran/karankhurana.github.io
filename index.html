@@ -58,6 +58,7 @@
             margin: 0;
             font-size: 16px;
         }
+
         /* End of Tab View CSS */
     </style>
 </head>
@@ -96,7 +97,7 @@
             <p>Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.</p>
         </div>
         <div class="job">
-            <h3>Nagarro, Gurgaon</h3>
+            <h3>Nagarro, Gurgaon</h>
             <p><strong>Role:</strong> Senior Engineer</p>
             <p><strong>Duration:</strong> February 2021 - June 2022</p>
             <p>Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.</p>
@@ -208,7 +209,7 @@
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i.style.display = "none"];
+                tabcontent[i].style.display = "none";
             }
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
