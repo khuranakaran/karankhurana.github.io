@@ -78,15 +78,30 @@
     </nav>
     <section id="about">
         <h2>About Me</h2>
-        <!-- About Me content -->
+        <p>
+            I am an experienced software leader with over nine years of expertise in Android, Flutter, and iOS development. Proven track record in client engagement and adept team leadership. Currently advancing my skills with an MBA program at IIM, Kozhikode, to further augment my strategic acumen and leadership capabilities.
+        </p>
     </section>
     <section id="education">
         <h2>Education</h2>
-        <!-- Education content -->
+        <p><strong>IIM, Kozhikode</strong> — MBA (June 2023 - June 2025)</p>
+        <p><strong>M.D.U, Rohtak</strong> — Bachelor’s of Technology in Computer Science and Engineering (August 2011 - June 2015)</p>
     </section>
     <section id="experience">
         <h2>Experience</h2>
-        <!-- Experience content -->
+        <div class="job">
+            <h3>Lendingkart, Bangalore</h3>
+            <p><strong>Role:</strong> Team Lead</p>
+            <p><strong>Duration:</strong> September 2022 - Present</p>
+            <p>Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.</p>
+        </div>
+        <div class="job">
+            <h3>Nagarro, Gurgaon</h3>
+            <p><strong>Role:</strong> Senior Engineer</p>
+            <p><strong>Duration:</strong> February 2021 - June 2022</p>
+            <p>Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.</p>
+        </div>
+        <!-- Add other experiences similarly -->
     </section>
     <section id="skills">
         <h2>Skills</h2>
@@ -100,37 +115,78 @@
             <div id="mobile" class="tabcontent">
                 <h3>Mobile Development</h3>
                 <div class="skill-item">
-                    <img src="android_image.jpg" alt="Android">
+                    <img src="images/android.png" alt="Android">
                     <p>Android</p>
                 </div>
                 <div class="skill-item">
-                    <img src="kotlin_image.jpg" alt="Kotlin">
+                    <img src="images/kotlin.png" alt="Kotlin">
                     <p>Kotlin</p>
                 </div>
                 <div class="skill-item">
-                    <img src="flutter_image.jpg" alt="Flutter">
+                    <img src="images/flutter.png" alt="Flutter">
                     <p>Flutter</p>
                 </div>
                 <div class="skill-item">
-                    <img src="ios_image.jpg" alt="iOS">
+                    <img src="images/ios.png" alt="iOS">
                     <p>iOS</p>
                 </div>
                 <div class="skill-item">
-                    <img src="swift_image.jpg" alt="Swift">
+                    <img src="images/swift.png" alt="Swift">
                     <p>Swift</p>
                 </div>
             </div>
             <div id="tech" class="tabcontent">
                 <h3>Technical Leadership</h3>
-                <!-- Skills for Technical Leadership -->
+                <div class="skill-item">
+                    <img src="images/leadership.png" alt="Technical Leadership">
+                    <p>Technical Leadership</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/mentoring.png" alt="Mentoring">
+                    <p>Mentoring</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/project_management.png" alt="Project Management">
+                    <p>Project Management</p>
+                </div>
             </div>
             <div id="software" class="tabcontent">
                 <h3>Software Development</h3>
-                <!-- Skills for Software Development -->
+                <div class="skill-item">
+                    <img src="images/java.png" alt="Java">
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/sdlc.png" alt="SDLC">
+                    <p>SDLC</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/restful_apis.png" alt="RESTful APIs">
+                    <p>RESTful APIs</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/graphql.png" alt="GraphQL">
+                    <p>GraphQL</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/typescript.png" alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
             </div>
             <div id="devops" class="tabcontent">
                 <h3>DevOps</h3>
-                <!-- Skills for DevOps -->
+                <div class="skill-item">
+                    <img src="images/terraform.png" alt="Terraform">
+                    <p>Terraform</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/cicd.png" alt="CI/CD">
+                    <p>CI/CD</p>
+                </div>
+                <div class="skill-item">
+                    <img src="images/git.png" alt="Version Control (Git)">
+                    <p>Version Control (Git)</p>
+                </div>
             </div>
         </div>
     </section>
@@ -140,7 +196,9 @@
     </section>
     <section id="contact">
         <h2>Contact</h2>
-        <!-- Contact content -->
+        <p><strong>Email:</strong> khuranakaran18@gmail.com</p>
+        <p><strong>Phone:</strong> +91 8860914345</p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kkhuranaa/">https://www.linkedin.com/in/kkhuranaa/</a></p>
     </section>
     <footer>
         <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
@@ -150,7 +208,7 @@
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+                tabcontent[i.style.display = "none"];
             }
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
@@ -159,6 +217,10 @@
             document.getElementById(tabName).style.display = "block";
             evt.currentTarget.className += " active";
         }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".tablinks").click();
+        });
     </script>
 </body>
 </html>
