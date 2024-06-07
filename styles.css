@@ -210,7 +210,7 @@ body.fixed-header-padding {
     position: fixed;
     width: 100%;
     background-color: #fff;
-    transition: height 0.3s ease;
+    transition: height 0.3s ease, font-size 0.3s ease;
     z-index: 1000;
 }
 
@@ -223,6 +223,11 @@ body.fixed-header-padding {
 
 .header-text {
     text-align: center;
+    transition: font-size 0.3s ease;
+}
+
+.header-subtext {
+    font-size: 16px;
 }
 
 #main-header.collapsed {
@@ -239,7 +244,6 @@ body.fixed-header-padding {
     width: 100%;
     background-color: #333;
     z-index: 1000;
-    display: none;
 }
 
 #main-nav ul {
@@ -258,10 +262,3 @@ body.fixed-header-padding {
     text-decoration: none;
     font-size: 16px;
 }
-
-
-
-
-/* End of Tab View CSS */
-
-
