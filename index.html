@@ -83,7 +83,7 @@
     <div class="header-content">
         <div class="header-text">
             <h1>Karan Khurana</h1>
-            <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
+            <p class="header-subtext">Seasoned Software Leader | Android, Flutter & iOS Developer</p>
         </div>
     </div>
 </header>
@@ -97,7 +97,6 @@
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
-
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -328,18 +327,16 @@
         document.addEventListener("DOMContentLoaded", function() {
             document.querySelector(".tablinks").click();
         });
-
         window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-        document.querySelector("header").style.height = "80px"; /* Adjust height as needed */
-        document.querySelector("header").style.padding = "10px";
+        document.getElementById("main-header").classList.add("collapsed");
     } else {
-        document.querySelector("header").style.height = "auto";
-        document.querySelector("header").style.padding = "20px";
+        document.getElementById("main-header").classList.remove("collapsed");
     }
 }
+
 
     </script>
 </body>
