@@ -1,172 +1,24 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset styles */
+body, header, nav, section, h2 {
     margin: 0;
     padding: 0;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 1em 0;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #444;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-}
-
-section {
-    padding: 2em;
-}
-
-h2 {
-    border-bottom: 2px solid #333;
-    padding-bottom: 0.5em;
-}
-
-.slider {
-    position: relative;
-    max-width: 800px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.slider-container {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-}
-
-.slider-item {
-    min-width: 100%;
-    box-sizing: border-box;
-    padding: 1em;
-}
-
-.slide-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    cursor: pointer;
-    padding: 1em;
-}
-
-.slide-button.prev {
-    left: 0;
-}
-
-.slide-button.next {
-    right: 0;
-}
-
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        text-align: center;
-    }
-
-    nav ul li a {
-        display: block;
-    }
-}
-
-/* CSS for Tab View */
-.tab {
-    display: flex;
-    justify-content: center;
-    border-bottom: 2px solid #007bff;
-    margin-bottom: 20px;
-}
-
-.tab button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 10px 20px;
-    transition: 0.3s;
-    font-size: 18px;
-    margin: 0 10px;
-    color: #555;
-}
-
-.tab button:hover {
-    color: #007bff;
-}
-
-.tab button.active {
-    color: #007bff;
-    border-bottom: 2px solid #007bff;
-}
-
-.tabcontent {
-    display: none;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-top: none;
-}
-
-.tabcontent img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
 }
 
 header {
-    background-color: #f8f9fa; /* Change as needed */
+    background-color: #f8f9fa;
     padding: 20px;
     text-align: center;
     position: fixed;
     width: 100%;
     z-index: 1000;
-    transition: height 0.3s, padding 0.3s;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-.profile-picture {
-    border-radius: 50%;
-    width: 50px; /* Adjust size as needed */
-    height: 50px; /* Adjust size as needed */
-    margin-right: 20px;
-}
-
-header h1, header p {
-    margin: 0;
-}
-
-nav {
-    background-color: #343a40; /* Change as needed */
+.nav-container {
+    background-color: #343a40;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -188,7 +40,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 150px; /* Adjust according to the header height */
+    margin-top: 100px; /* Adjust according to the header height */
 }
 
 /* Fixed header when scrolling */
@@ -204,14 +56,6 @@ nav ul li a {
 /* Add padding to the body when header is fixed */
 body.fixed-header-padding {
     padding-top: 60px; /* Adjust as needed */
-}
-
-#main-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #fff;
-    z-index: 1000;
 }
 
 .header-content {
