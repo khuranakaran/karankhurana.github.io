@@ -206,6 +206,61 @@ body.fixed-header-padding {
     padding-top: 60px; /* Adjust as needed */
 }
 
+#main-header {
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    transition: height 0.3s ease;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.header-text {
+    text-align: center;
+}
+
+#main-header.collapsed {
+    height: 50px; /* Adjust height as needed */
+}
+
+#main-header.collapsed .header-text {
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+#main-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    display: none;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#main-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
 
 /* End of Tab View CSS */
 
