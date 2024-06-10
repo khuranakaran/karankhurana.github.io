@@ -25,7 +25,7 @@ header {
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 135px; /* Adjust based on header height */
+    top: 140px; /* Adjust based on header height */
     z-index: 999; /* Ensure it stays below header */
 }
 
