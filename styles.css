@@ -1,5 +1,5 @@
 /* Reset styles */
-body, header, nav, section, h2 {
+body, header, nav, section, h2, p {
     margin: 0;
     padding: 0;
 }
@@ -16,7 +16,7 @@ header {
     width: 100%;
     z-index: 1000;
     color: white; /* Ensure text is visible */
-    top: 0; /* Remove margin from top */
+    top: 0;
 }
 
 .nav-container {
