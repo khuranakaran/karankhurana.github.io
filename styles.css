@@ -16,6 +16,7 @@ header {
     width: 100%;
     z-index: 1000;
     color: white; /* Ensure text is visible */
+    top: 0; /* Remove margin from top */
 }
 
 .nav-container {
@@ -31,6 +32,7 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Ensure no margin */
 }
 
 nav ul li {
