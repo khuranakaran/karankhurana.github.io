@@ -25,7 +25,7 @@ header {
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 150px; /* Adjust based on header height */
+    top: 140px; /* Adjust based on header height */
     z-index: 999; /* Ensure it stays below header */
 }
 
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 170px; /* Adjust according to the header and nav height */
+    margin-top: 180px; /* Adjust according to the header and nav height */
 }
 
 /* Tab styles */
