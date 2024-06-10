@@ -16,7 +16,7 @@ header {
     width: 100%;
     z-index: 1000;
     color: white; /* Ensure text is visible */
-    top: 0;
+    top: 20;
 }
 
 .nav-container {
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 150px; /* Adjust according to the header and nav height */
+    margin-top: 170px; /* Adjust according to the header and nav height */
 }
 
 /* Tab styles */
