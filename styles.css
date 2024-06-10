@@ -10,7 +10,13 @@ body {
 
 header {
     text-align: center;
-    margin-bottom: 20px;
+    background-color: #4CAF50;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    color: white;
+    top: 0;
 }
 
 header h1 {
@@ -19,7 +25,7 @@ header h1 {
 
 header p {
     font-size: 1.2em;
-    color: #555;
+    color: #fff;
 }
 
 .social-media-icons {
@@ -30,7 +36,7 @@ header p {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 10px;
-    color: #555;
+    color: #fff;
     transition: color 0.3s;
 }
 
@@ -38,31 +44,20 @@ header p {
     color: #000;
 }
 
-header {
-    background-color: #4CAF50; /* Updated header color */
-    padding: 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    color: white; /* Ensure text is visible */
-    top: 0;
-}
-
 .nav-container {
-    background-color: #333; /* Darker color for nav */
+    background-color: #333;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 138px; /* Adjust based on header height */
-    z-index: 999; /* Ensure it stays below header */
+    top: 138px;
+    z-index: 999;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Ensure no margin */
+    margin: 0;
 }
 
 nav ul li {
@@ -76,7 +71,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 180px; /* Adjust according to the header and nav height */
+    margin-top: 180px;
 }
 
 /* Tab styles */
@@ -181,6 +176,12 @@ nav ul li a {
     font-size: 2.5em;
 }
 
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
 .timeline {
     display: flex;
     justify-content: space-between;
@@ -196,7 +197,7 @@ nav ul li a {
     margin: 0 10px;
     width: 300px;
     flex: 0 0 auto;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: relative;
 }
 
@@ -217,7 +218,6 @@ nav ul li a {
     font-size: 0.9em;
     color: #666;
 }
-
 
 .copy-icon {
     cursor: pointer;
