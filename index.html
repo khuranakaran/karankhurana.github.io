@@ -16,16 +16,17 @@
         </div>
     </div>
 </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<nav class="nav-container">
+    <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<div class="main-content">
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -153,30 +154,30 @@
         <!-- Projects content -->
     </section>
     <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-info">
-        <!-- Email -->
-        <div class="contact-item">
-            <img src="images/ic_email.png" alt="Email">
-            <p>khuranakaran18@gmail.com</p>
-            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyEmail()">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <!-- Email -->
+            <div class="contact-item">
+                <img src="images/ic_email.png" alt="Email">
+                <p>khuranakaran18@gmail.com</p>
+                <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyEmail()">
+            </div>
+            <!-- Phone -->
+            <div class="contact-item">
+                <img src="images/ic_phone.png" alt="Phone">
+                <p>+918860914345</p>
+                <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyPhone()">
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+                <img src="images/ic_linkedin.png" alt="LinkedIn">
+                <p><a href="https://www.linkedin.com/in/kkhuranaa/" target="_blank" onclick="openLinkedIn()">LinkedIn Profile</a></p>
+            </div>
         </div>
-        <!-- Phone -->
-        <div class="contact-item">
-            <img src="images/ic_phone.png" alt="Phone">
-            <p>+918860914345</p>
-            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyPhone()">
-        </div>
-        <!-- LinkedIn -->
-        <div class="contact-item">
-            <img src="images/ic_linkedin.png" alt="LinkedIn">
-            <p><a href="https://www.linkedin.com/in/kkhuranaa/" target="_blank" onclick="openLinkedIn()">LinkedIn Profile</a></p>
-        </div>
-    </div>
-</section>
-    <footer>
-        <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
-    </footer>
-
+    </section>
+</div>
+<footer>
+    <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
+</footer>
 </body>
 </html>
