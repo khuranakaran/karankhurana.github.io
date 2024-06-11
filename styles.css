@@ -1,9 +1,4 @@
 /* Reset styles */
-section {
-    margin-top: 40px; /* Add space before each section */
-    padding: 0 20px; /* Add padding to the sides */
-}
-
 body, header, nav, section, h2, p {
     margin: 0;
     padding: 0;
@@ -65,15 +60,14 @@ header.collapsed p, header.collapsed .social-media-icons {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-right: 20px;
-    transition: width 0.3s ease, height 0.3s ease;
+    margin-right: 10px; /* Reduced margin to bring image closer to name */
+    transition: width 0.3s ease, height 0.3s ease, margin-right 0.3s ease;
 }
 
 header.collapsed .profile-picture {
-    align-items: center;
-    justify-content: center; /* Center content inside profile container */
     width: 50px;
     height: 50px;
+    margin-right: 5px; /* Reduced margin to bring image closer to name */
 }
 
 .header-content {
@@ -82,6 +76,30 @@ header.collapsed .profile-picture {
     align-items: center; /* Center content inside header content */
     text-align: center; /* Center text inside header content */
     overflow: hidden;
+}
+
+.download-resume-btn {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-resume-btn:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+header.collapsed .download-resume-btn {
+    font-size: 0.75em;
+    padding: 5px 10px;
+    margin-left: 10px;
 }
 
 .social-media-icons {
@@ -103,7 +121,7 @@ header.collapsed .social-media-icons {
     transition: color 0.3s;
 }
 
-.social-media-icons a:hover {
+social-media-icons a:hover {
     color: #000;
 }
 
@@ -119,20 +137,18 @@ header.collapsed .social-media-icons {
 }
 
 header.collapsed + .nav-container {
-    top: 10px; /* Adjust this value to the height of the collapsed header */
+    top: 50px; /* Adjust this value to the height of the collapsed header */
 }
 
 /* Adjustments to ensure proper spacing between section titles and their content */
 section {
-    margin-top: 100px; /* Add space before each section */
+    margin-top: 60px; /* Reduce space before each section */
     padding: 0 20px; /* Add padding to the sides */
 }
 
 h2 {
     margin-bottom: 20px; /* Add space after each section title */
 }
-
-
 
 nav ul {
     list-style-type: none;
@@ -151,7 +167,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 250px;
+    margin-top: 150px; /* Reduced top margin */
 }
 
 .side-by-side-container {
@@ -268,14 +284,13 @@ nav ul li a {
     gap: 20px; /* Adjust gap as needed */
 }
 
-
 #experience {
-    padding: 50px 20px; /* Top and bottom padding, with added side padding */
+    padding: 40px 20px; /* Reduced top and bottom padding */
 }
 
 #experience h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px; /* Reduced bottom margin */
     font-size: 2.0em;
 }
 
