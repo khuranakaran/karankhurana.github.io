@@ -42,8 +42,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
         window.onscroll = function() {
-    scrollFunction();
-};
+            scrollFunction();
+        };
+
+ document.addEventListener("DOMContentLoaded", function () {
+            const header = document.getElementById("header");
+            const navContainer = document.querySelector(".nav-container");
+            const initialHeaderHeight = header.offsetHeight;
+            const collapsedHeaderHeight = 60; // Adjust this based on the actual collapsed height
+
+            navContainer.style.top = `${initialHeaderHeight}px`;
+
+            window.addEventListener("scroll", function () {
+                if (window.scrollY > initialHeaderHeight) {
+                    header.classList.add("collapsed");
+                    navContainer.style.top = `${collapsedHeaderHeight}px`;
+                } else {
+                    header.classList.remove("collapsed");
+                    navContainer.style.top = `${initialHeaderHeight}px`;
+                }
+            });
+        });
 
 
     // Function to copy email to clipboard
