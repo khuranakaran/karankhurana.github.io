@@ -1,4 +1,9 @@
 /* Reset styles */
+section {
+    margin-top: 60px; /* Reduced space before each section */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
 body, header, nav, section, h2, p {
     margin: 0;
     padding: 0;
@@ -167,7 +172,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 150px; /* Reduced top margin */
+    margin-top: 200px; /* Reduced top margin */
 }
 
 .side-by-side-container {
