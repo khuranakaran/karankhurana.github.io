@@ -49,6 +49,7 @@ header.collapsed p, header.collapsed .social-media-icons {
 }
 
 .profile-picture {
+    float: left;
     border-radius: 50%;
     width: 80px;
     height: 80px;
@@ -56,6 +57,7 @@ header.collapsed p, header.collapsed .social-media-icons {
 }
 
 .header-content {
+    overflow: hidden;
     flex-grow: 1;
 }
 
