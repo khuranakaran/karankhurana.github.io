@@ -63,7 +63,7 @@ header.collapsed {
           text-align: center;
           width: 100%;
           position: fixed;
-          top: 80px; /* Initial position for non-collapsed header */
+          top: 180px; /* Initial position for non-collapsed header */
           z-index: 999;
           transition: top 0.3s ease;
       }
