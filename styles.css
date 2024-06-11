@@ -260,6 +260,7 @@ nav ul li a {
     display: flex;
     justify-content: left;
     gap: 20px; /* Adjust gap as needed */
+}
 
 
 #experience {
