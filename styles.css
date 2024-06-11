@@ -19,6 +19,8 @@ body {
     color: white;
     top: 0;
     transition: all 0.3s ease;
+    justify-content: center; /* Center content inside header */
+    text-align: center; /* Center text inside header */
 }
 
 header.collapsed {
@@ -47,6 +49,8 @@ header.collapsed p, header.collapsed .social-media-icons {
 .profile-container {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center content inside profile container */
+    width: 100%; /* Ensure profile container takes full width */
 }
 
 .profile-picture {
@@ -57,22 +61,28 @@ header.collapsed p, header.collapsed .social-media-icons {
 }
 
 .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside header content */
+    text-align: center; /* Center text inside header content */
     overflow: hidden;
 }
 
 .social-media-icons {
+    display: flex;
+    justify-content: center; /* Center social media icons */
     margin-top: 10px;
 }
 
 .social-media-icons a {
     text-decoration: none;
     font-size: 1.5em;
-    margin: 0 10px;
+    margin: 0 10px; /* Space out social media icons */
     color: #fff;
     transition: color 0.3s;
 }
 
-social-media-icons a:hover {
+.social-media-icons a:hover {
     color: #000;
 }
 
