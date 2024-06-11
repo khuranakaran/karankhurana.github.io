@@ -256,9 +256,9 @@ nav ul li a {
     margin-right: 10px;
 }
 
-.side-by-side-container-contac {
+.side-by-side-container-contact {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 20px; /* Adjust gap as needed */
 
 
