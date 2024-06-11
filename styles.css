@@ -280,21 +280,17 @@ nav ul li a {
 
 .timeline {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    padding: 0 20px;
+    flex-direction: column; /* Display timeline items vertically */
+    gap: 20px; /* Add space between timeline items */
+    padding: 20px; /* Add padding to the timeline container */
 }
 
 .timeline-item {
     background: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
-    margin: 0 10px;
-    width: 300px;
-    flex: 0 0 auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    padding: 20px; /* Add padding to the timeline items */
+    width: 100%; /* Adjust width to fit the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow for elevation */
 }
 
 .timeline-date {
