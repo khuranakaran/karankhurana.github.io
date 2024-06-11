@@ -307,23 +307,61 @@ With a proven track record in mobile development, I bring a wealth of knowledge 
         </div>
     </div>
 </section>
-    <section id="experience">
-        <h2>Contact</h2>
-        <div class="contact-info">
-            <!-- Email -->
-            <div class="contact-item">
-                <img src="images/ic_email.png" alt="Email">
-                <p>khuranakaran18@gmail.com</p>
-                <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyEmail()">
-            </div>
-            <!-- Phone -->
-            <div class="contact-item">
-                <img src="images/ic_phone.png" alt="Phone">
-                <p>+918860914345</p>
-                <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyPhone()">
-            </div>
+    <section id="experience" style="width: 30%; float: left;">
+    <h2>Contact</h2>
+    <div class="contact-info">
+        <!-- Email -->
+        <div class="contact-item">
+            <img src="images/ic_email.png" alt="Email">
+            <p>khuranakaran18@gmail.com</p>
+            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyEmail()">
         </div>
-    </section>
+        <!-- Phone -->
+        <div class="contact-item">
+            <img src="images/ic_phone.png" alt="Phone">
+            <p>+918860914345</p>
+            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyPhone()">
+        </div>
+    </div>
+</section>
+
+<section id="contact" style="width: 70%; float: left;">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="company">Company:</label>
+                        <input type="text" class="form-control" id="company" name="company">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
 </div>
 <footer>
     <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
