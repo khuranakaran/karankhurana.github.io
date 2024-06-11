@@ -64,7 +64,7 @@ header.collapsed p, header.collapsed .social-media-icons {
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 80px; /* Adjust this value to the height of the collapsed header */
+    top: 80px; /* Adjust this value to the height of the header */
     z-index: 999;
     transition: top 0.3s ease;
 }
