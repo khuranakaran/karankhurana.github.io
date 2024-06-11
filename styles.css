@@ -146,6 +146,11 @@ nav ul li a {
     padding: 10px 20px;
 }
 
+/* Ensure sections have equal height */
+#projects {
+    padding: 10px 20px;
+}
+
 #education {
     padding: 10px 20px;
 }
