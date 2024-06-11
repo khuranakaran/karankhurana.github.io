@@ -119,12 +119,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('scroll', function () {
     const header = document.getElementById('header');
+    const nav = document.querySelector('.nav-container');
+
     if (window.scrollY > 50) {
         header.classList.add('collapsed');
+        nav.style.top = '50px'; // Adjust this value to the height of the collapsed header
     } else {
         header.classList.remove('collapsed');
+        nav.style.top = '80px'; // Adjust this value to the height of the expanded header
     }
 });
+
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
