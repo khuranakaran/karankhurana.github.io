@@ -39,7 +39,8 @@ header p, .social-media-icons {
 }
 
 header.collapsed p, header.collapsed .social-media-icons {
-    opacity: 0;
+    opacity: 1;
+    transition: opacity 0.3s ease;
 }
 
 .social-media-icons {
