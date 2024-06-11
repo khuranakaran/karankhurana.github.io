@@ -256,6 +256,12 @@ nav ul li a {
     margin-right: 10px;
 }
 
+.side-by-side-container-contac {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adjust gap as needed */
+
+
 #experience {
     padding: 50px 20px; /* Top and bottom padding, with added side padding */
 }
