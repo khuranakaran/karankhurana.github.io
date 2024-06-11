@@ -8,6 +8,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+#header {
+        display: flex;
+        align-items: center;
+    }
+
 header {
     text-align: center;
     background-color: #4CAF50;
