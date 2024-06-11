@@ -307,13 +307,11 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
-.contact-item img {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
+.contact-item img,
+.copy-icon {
+    margin-right: 10px; /* Add margin between icon and text */
 }
 
 .copy-icon {
     cursor: pointer;
-    margin-left: 10px;
 }
