@@ -131,6 +131,39 @@ nav ul li a {
     margin-top: 270px;
 }
 
+.side-by-side-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust gap as needed */
+}
+
+#about, #education {
+    flex: 1;
+}
+
+/* Ensure sections have equal height */
+#about {
+    background-color: #f9f9f9; /* Optional background color */
+}
+
+#education {
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Additional styling for section headers */
+#about h2, #education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .side-by-side-container {
+        flex-direction: column;
+    }
+}
+
 /* Tab styles */
 .tab {
     display: flex;
