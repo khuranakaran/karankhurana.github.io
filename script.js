@@ -98,6 +98,15 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollFunction();
 };
 
+window.addEventListener('scroll', function() {
+            var header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('collapsed');
+            } else {
+                header.classList.remove('collapsed');
+            }
+        });
+
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         document.getElementById("main-header").classList.add("collapsed");
