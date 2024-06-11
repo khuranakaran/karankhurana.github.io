@@ -181,18 +181,18 @@ nav ul li a {
 
 /* Ensure sections have equal height */
 #about {
-    margin-top: 200px;
+     margin-top: 50px;
     padding: 10px 20px;
 }
 
 /* Ensure sections have equal height */
 #projects {
-    margin-top: 40px;
+     margin-top: 50px;
     padding: 10px 20px;
 }
 
 #education {
-    margin-top: 40px;
+    margin-top: 50px;
     padding: 10px 20px;
 }
 
@@ -287,6 +287,7 @@ nav ul li a {
 }
 
 #experience {
+    margin-top: 50px;
     padding: 40px 20px; /* Reduced top and bottom padding */
 }
 
