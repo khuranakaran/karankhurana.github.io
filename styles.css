@@ -187,15 +187,18 @@ nav ul li a {
 
 /* Ensure sections have equal height */
 #about {
+    margin-top: 200px;
     padding: 10px 20px;
 }
 
 /* Ensure sections have equal height */
 #projects {
+    margin-top: 40px;
     padding: 10px 20px;
 }
 
 #education {
+    margin-top: 40px;
     padding: 10px 20px;
 }
 
