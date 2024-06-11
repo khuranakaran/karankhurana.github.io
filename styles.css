@@ -72,7 +72,7 @@ header.collapsed p, header.collapsed .social-media-icons {
     transition: color 0.3s;
 }
 
-.social-media-icons a:hover {
+social-media-icons a:hover {
     color: #000;
 }
 
