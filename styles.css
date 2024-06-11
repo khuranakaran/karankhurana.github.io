@@ -145,12 +145,6 @@ header.collapsed + .nav-container {
     top: 50px; /* Adjust this value to the height of the collapsed header */
 }
 
-/* Adjustments to ensure proper spacing between section titles and their content */
-section {
-    margin-top: 60px; /* Reduce space before each section */
-    padding: 0 20px; /* Add padding to the sides */
-}
-
 h2 {
     margin-bottom: 20px; /* Add space after each section title */
 }
