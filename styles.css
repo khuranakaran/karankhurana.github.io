@@ -50,7 +50,7 @@ header p {
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 138px;
+    top: 160px;
     z-index: 999;
 }
 
@@ -71,7 +71,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 180px;
+    margin-top: 200px;
 }
 
 /* Tab styles */
