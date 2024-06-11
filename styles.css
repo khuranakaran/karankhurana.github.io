@@ -43,6 +43,17 @@ header.collapsed p, header.collapsed .social-media-icons {
     transition: opacity 0.3s ease;
 }
 
+.profile-picture {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+}
+
+.header-content {
+    flex-grow: 1;
+}
+
 .social-media-icons {
     margin-top: 10px;
 }
@@ -91,7 +102,7 @@ nav ul li a {
 }
 
 .main-content {
-    margin-top: 250px;
+    margin-top: 270px;
 }
 
 /* Tab styles */
