@@ -65,6 +65,8 @@ header.collapsed p, header.collapsed .social-media-icons {
 }
 
 header.collapsed .profile-picture {
+    align-items: center;
+    justify-content: center; /* Center content inside profile container */
     width: 50px;
     height: 50px;
 }
@@ -112,7 +114,7 @@ header.collapsed .social-media-icons {
 }
 
 header.collapsed + .nav-container {
-    top: 40px; /* Adjust this value to the height of the collapsed header */
+    top: 10px; /* Adjust this value to the height of the collapsed header */
 }
 
 /* Adjustments to ensure proper spacing between section titles and their content */
