@@ -239,28 +239,6 @@ nav ul li a {
     transform: translateY(-10px);
 }
 
-/* Contact info styles */
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    margin-right: 10px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    margin-right: 10px;
-}
-
-.contact-item img {
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-}
-
 .side-by-side-container-contact {
     display: flex;
     justify-content: left;
@@ -290,6 +268,7 @@ nav ul li a {
     border: 1px solid #ddd;
     padding: 20px; /* Add padding to the timeline items */
     min-width: 300px; /* Set minimum width for each timeline item */
+    max-width: 200px; /* Set maximum width for each timeline item */
     flex: 0 0 auto; /* Allow items to shrink if needed */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow for elevation */
     margin-right: 20px; /* Add some space between timeline items */
@@ -311,6 +290,28 @@ nav ul li a {
     margin: 0 0 10px 0;
     font-size: 0.9em;
     color: #666;
+}
+
+/* Contact info styles */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    margin-right: 10px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.contact-item img {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
 }
 
 .copy-icon {
