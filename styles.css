@@ -143,11 +143,13 @@ nav ul li a {
 
 /* Ensure sections have equal height */
 #about {
-    background-color: #f9f9f9; /* Optional background color */
+    padding: 10px 20px;
+/*     background-color: #f9f9f9; /* Optional background color */ */
 }
 
 #education {
-    background-color: #f0f0f0; /* Optional background color */
+    padding: 10px 20px;
+/*     background-color: #f0f0f0; /* Optional background color */ */
 }
 
 /* Additional styling for section headers */
