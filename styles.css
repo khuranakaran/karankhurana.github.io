@@ -1,12 +1,13 @@
+/* Global Styles */
 body, header, nav, section, h2, p {
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: Arial, sans-serif;
 }
 
+/* Header Styles */
 #header {
     display: flex;
     align-items: center;
@@ -18,28 +19,23 @@ body {
     color: white;
     top: 0;
     transition: all 0.3s ease;
-    justify-content: center; /* Center content inside header */
-    text-align: center; /* Center text inside header */
+    justify-content: center;
+    text-align: center;
 }
-
 header.collapsed {
     padding: 10px;
 }
-
 header h1 {
     font-size: 3em;
     transition: font-size 0.3s ease;
 }
-
 header.collapsed h1 {
     font-size: 1.5em;
 }
-
 header p, .social-media-icons {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
-
 header.collapsed p, header.collapsed .social-media-icons {
     opacity: 0;
     height: 0;
@@ -48,35 +44,36 @@ header.collapsed p, header.collapsed .social-media-icons {
     padding: 0;
 }
 
+/* Profile Container and Picture */
 .profile-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center content inside profile container */
-    width: 100%; /* Ensure profile container takes full width */
+    justify-content: center;
+    width: 100%;
 }
-
 .profile-picture {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    margin-right: 10px; /* Reduced margin to bring image closer to name */
+    margin-right: 10px;
     transition: width 0.3s ease, height 0.3s ease, margin-right 0.3s ease;
 }
-
 header.collapsed .profile-picture {
     width: 50px;
     height: 50px;
-    margin-right: 5px; /* Reduced margin to bring image closer to name */
+    margin-right: 5px;
 }
 
+/* Header Content */
 .header-content {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content inside header content */
-    text-align: center; /* Center text inside header content */
+    align-items: center;
+    text-align: center;
     overflow: hidden;
 }
 
+/* Download Resume Button */
 .download-resume-btn {
     background-color: #fff;
     color: #4CAF50;
@@ -89,132 +86,104 @@ header.collapsed .profile-picture {
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .download-resume-btn:hover {
     background-color: #4CAF50;
     color: #fff;
 }
-
 header.collapsed .download-resume-btn {
     font-size: 0.75em;
     padding: 5px 10px;
     margin-left: 10px;
 }
 
+/* Social Media Icons */
 .social-media-icons {
     display: flex;
-    justify-content: center; /* Center social media icons */
+    justify-content: center;
     margin-top: 10px;
     transition: margin-top 0.3s ease;
 }
-
 header.collapsed .social-media-icons {
     margin-top: 0;
 }
-
 .social-media-icons a {
     text-decoration: none;
     font-size: 1.5em;
-    margin: 0 10px; /* Space out social media icons */
+    margin: 0 10px;
     color: #fff;
     transition: color 0.3s;
 }
 
-social-media-icons a:hover {
-    color: #000;
-}
-
+/* Navigation Container */
 .nav-container {
     background-color: #333;
     padding: 10px 0;
     text-align: center;
     width: 100%;
     position: fixed;
-    top: 80px; /* Adjust this value to the height of the header */
+    top: 80px;
     z-index: 999;
     transition: top 0.3s ease;
 }
-
 header.collapsed + .nav-container {
-    top: 50px; /* Adjust this value to the height of the collapsed header */
+    top: 50px;
 }
 
-h2 {
-    margin-bottom: 20px; /* Add space after each section title */
-}
-
+/* Navigation Links */
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
 }
 
+/* Main Content */
 .main-content {
-    margin-top: 200px; /* Reduced top margin */
+    margin-top: 200px;
 }
 
+/* Side by Side Container */
 .side-by-side-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Adjust gap as needed */
+    gap: 20px;
 }
-
-#about, #education {
+#about, #education, #projects, #experience, #contact {
     flex: 1;
-}
-
-/* Ensure sections have equal height */
-#about {
-     margin-top: 50px;
-    padding: 10px 20px;
-}
-
-/* Ensure sections have equal height */
-#projects {
-     margin-top: 50px;
-    padding: 10px 20px;
-}
-
-#education {
     margin-top: 50px;
     padding: 10px 20px;
 }
 
-/* Additional styling for section headers */
-#about h2, #education h2 {
+/* Section Headers */
+#about h2, #education h2, #experience h2, #contact h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
 }
 
-/* Responsive design for smaller screens */
+/* Responsive Design */
 @media (max-width: 768px) {
     .side-by-side-container {
         flex-direction: column;
     }
 }
 
-/* Tab styles */
+/* Tab Styles */
 .tab {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
-
 .tab button {
     background-color: transparent;
     border: none;
-    outline: none;
     cursor: pointer;
     padding: 10px 20px;
     transition: 0.3s;
@@ -222,33 +191,28 @@ nav ul li a {
     margin: 0 10px;
     color: #555;
 }
-
-.tab button:hover {
-    color: #4CAF50;
-}
-
-.tab button.active {
+.tab button:hover, .tab button.active {
     color: #4CAF50;
     border-bottom: 2px solid #4CAF50;
 }
 
+/* Tab Content */
 .tabcontent {
     display: none;
     padding: 20px;
 }
 
+/* Skills Container */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
-
 .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     background-color: #f7f7f7;
     padding: 10px;
@@ -257,88 +221,54 @@ nav ul li a {
     transition: transform 0.3s;
     width: 120px;
 }
-
 .skill-item img {
     width: 50px;
     height: auto;
     margin-bottom: 10px;
 }
-
 .skill-item p {
     margin: 0;
     font-size: 16px;
     color: #333;
 }
-
 .skill-item:hover {
     transform: translateY(-10px);
 }
 
-.side-by-side-container-contact {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px; /* Adjust gap as needed */
-}
-
-#experience, #contact {
-    flex: 1;
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-#experience h2, #contact h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
-}
-
-.form-group .row {
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-group .row .col-md-6 {
-    flex: 0 0 48%;
-    box-sizing: border-box;
-}
-
+/* Timeline */
 .timeline {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    padding: 20px; /* Add padding to the timeline container */
-    margin-bottom: 20px; /* Add margin at the bottom */
+    overflow-x: auto;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-
 .timeline-item {
     background: #fff;
     border: 1px solid #ddd;
-    padding: 20px; /* Add padding to the timeline items */
-    min-width: 300px; /* Set minimum width for each timeline item */
-    max-width: 200px; /* Set maximum width for each timeline item */
-    flex: 0 0 auto; /* Allow items to shrink if needed */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust box shadow for elevation */
-    margin-right: 20px; /* Add some space between timeline items */
+    padding: 20px;
+    min-width: 300px;
+    max-width: 200px;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
 }
-
 .timeline-date {
     font-weight: bold;
     margin-bottom: 10px;
     color: #999;
 }
-
 .timeline-content h3 {
     margin: 0 0 10px 0;
     font-size: 1.2em;
     color: #333;
 }
-
 .timeline-content p {
     margin: 0 0 10px 0;
     font-size: 0.9em;
     color: #666;
 }
 
-/* Contact info styles */
+/* Contact Info */
 .contact-info {
     display: flex;
     flex-direction: column;
@@ -346,18 +276,15 @@ nav ul li a {
     justify-content: left;
     margin-right: 10px;
 }
-
 .contact-item {
     display: flex;
-    align-items: center; /* Align items horizontally */
+    align-items: center;
     margin-bottom: 10px;
 }
-
 .contact-item img,
 .copy-icon {
-    margin-right: 10px; /* Add margin between icon and text */
+    margin-right: 10px;
 }
-
 .copy-icon {
     cursor: pointer;
 }
