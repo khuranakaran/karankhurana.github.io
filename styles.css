@@ -5,15 +5,15 @@ body, header, nav, section, h2, p {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F0F0F0; /* Changed to light theme */
-    color: #333; /* Dark text for readability */
+    background-color: #121212; /* Dark background */
+    color: #E0E0E0; /* Light text */
 }
 
 /* Header Styles */
 #header {
     display: flex;
     align-items: center;
-    background-color: #004080; /* Blue header */
+    background-color: #1F1F1F; /* Darker header */
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -78,8 +78,8 @@ header.collapsed .profile-picture {
 
 /* Download Resume Button */
 .download-resume-btn {
-    background-color: #007BFF; /* Blue button */
-    color: white;
+    background-color: #BB86FC; /* Accent color */
+    color: #121212; /* Dark text */
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -91,8 +91,8 @@ header.collapsed .profile-picture {
     display: inline-block;
 }
 .download-resume-btn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
-    color: white;
+    background-color: #3700B3; /* Darker accent on hover */
+    color: #fff;
 }
 header.collapsed .download-resume-btn {
     font-size: 0.75em;
@@ -114,16 +114,16 @@ header.collapsed .social-media-icons {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 10px;
-    color: #007BFF; /* Blue icons */
+    color: #BB86FC; /* Accent color */
     transition: color 0.3s;
 }
 .social-media-icons a:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #3700B3; /* Darker accent on hover */
 }
 
 /* Navigation Container */
 .nav-container {
-    background-color: #002040; /* Darker blue nav */
+    background-color: #333; /* Dark nav background */
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -152,7 +152,7 @@ nav ul li a {
     font-weight: 500;
 }
 nav ul li a:hover {
-    color: #007BFF; /* Blue on hover */
+    color: #BB86FC; /* Accent color on hover */
 }
 
 /* Main Content */
@@ -177,7 +177,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #007BFF; /* Blue headers */
+    color: #BB86FC; /* Accent color */
 }
 
 /* Responsive Design */
@@ -201,18 +201,18 @@ nav ul li a:hover {
     transition: 0.3s;
     font-size: 18px;
     margin: 0 10px;
-    color: #333; /* Dark text for tabs */
+    color: #E0E0E0; /* Light text */
 }
 .tab button:hover, .tab button.active {
-    color: #007BFF; /* Blue on active */
-    border-bottom: 2px solid #007BFF;
+    color: #BB86FC; /* Accent color */
+    border-bottom: 2px solid #BB86FC;
 }
 
 /* Tab Content */
 .tabcontent {
     display: none;
     padding: 20px;
-    background-color: #E0E0E0; /* Light background for content */
+    background-color: #1F1F1F; /* Dark content background */
     border-radius: 8px;
 }
 
@@ -228,7 +228,7 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #F0F0F0; /* Light background for skills */
+    background-color: #2C2C2C; /* Dark background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -243,7 +243,7 @@ nav ul li a:hover {
 .skill-item p {
     margin: 0;
     font-size: 16px;
-    color: #333; /* Dark text for skills */
+    color: #E0E0E0; /* Light text */
 }
 .skill-item:hover {
     transform: translateY(-10px);
@@ -255,12 +255,12 @@ nav ul li a:hover {
     overflow-x: auto;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #E0E0E0; /* Light background for timeline */
+    background-color: #1F1F1F; /* Dark background */
     border-radius: 8px;
 }
 .timeline-item {
-    background: #F0F0F0; /* Light background for timeline items */
-    border: 1px solid #CCC;
+    background: #2C2C2C; /* Dark background */
+    border: 1px solid #333;
     padding: 20px;
     min-width: 300px;
     max-width: 200px;
@@ -271,17 +271,17 @@ nav ul li a:hover {
 .timeline-date {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #007BFF; /* Blue for dates */
+    color: #BB86FC; /* Accent color */
 }
 .timeline-content h3 {
     margin: 0 0 10px 0;
     font-size: 1.2em;
-    color: #333; /* Dark text for titles */
+    color: #E0E0E0; /* Light text */
 }
 .timeline-content p {
     margin: 0 0 10px 0;
     font-size: 0.9em;
-    color: #666; /* Grey text for details */
+    color: #B0B0B0; /* Light grey text */
 }
 
 /* Contact Info */
@@ -304,7 +304,7 @@ nav ul li a:hover {
 .contact-item .contact-text {
     margin: 0 20px;
     line-height: 20px;
-    color: #333; /* Dark text for contact */
+    color: #E0E0E0; /* Light text */
 }
 .contact-item img.copy {
     cursor: pointer;
@@ -312,10 +312,10 @@ nav ul li a:hover {
 
 /* Footer */
 footer {
-    background-color: #004080; /* Blue footer */
+    background-color: #1F1F1F; /* Dark footer */
     padding: 20px;
     text-align: center;
-    color: #F0F0F0; /* Light text for footer */
+    color: #B0B0B0; /* Light grey text */
     position: fixed;
     width: 100%;
     bottom: 0;
