@@ -5,15 +5,15 @@ body, header, nav, section, h2, p {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #121212;
-    color: #E0E0E0;
+    background-color: #F0F0F0; /* Changed to light theme */
+    color: #333; /* Dark text for readability */
 }
 
 /* Header Styles */
 #header {
     display: flex;
     align-items: center;
-    background-color: #1F1F1F;
+    background-color: #004080; /* Blue header */
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -78,8 +78,8 @@ header.collapsed .profile-picture {
 
 /* Download Resume Button */
 .download-resume-btn {
-    background-color: #BB86FC;
-    color: #121212;
+    background-color: #007BFF; /* Blue button */
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -91,8 +91,8 @@ header.collapsed .profile-picture {
     display: inline-block;
 }
 .download-resume-btn:hover {
-    background-color: #3700B3;
-    color: #fff;
+    background-color: #0056b3; /* Darker blue on hover */
+    color: white;
 }
 header.collapsed .download-resume-btn {
     font-size: 0.75em;
@@ -114,16 +114,16 @@ header.collapsed .social-media-icons {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 10px;
-    color: #BB86FC;
+    color: #007BFF; /* Blue icons */
     transition: color 0.3s;
 }
 .social-media-icons a:hover {
-    color: #3700B3;
+    color: #0056b3; /* Darker blue on hover */
 }
 
 /* Navigation Container */
 .nav-container {
-    background-color: #333;
+    background-color: #002040; /* Darker blue nav */
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -152,7 +152,7 @@ nav ul li a {
     font-weight: 500;
 }
 nav ul li a:hover {
-    color: #BB86FC;
+    color: #007BFF; /* Blue on hover */
 }
 
 /* Main Content */
@@ -177,7 +177,7 @@ nav ul li a:hover {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #BB86FC;
+    color: #007BFF; /* Blue headers */
 }
 
 /* Responsive Design */
@@ -185,4 +185,138 @@ nav ul li a:hover {
     .side-by-side-container {
         flex-direction: column;
     }
+}
+
+/* Tab Styles */
+.tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tab button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: 0.3s;
+    font-size: 18px;
+    margin: 0 10px;
+    color: #333; /* Dark text for tabs */
+}
+.tab button:hover, .tab button.active {
+    color: #007BFF; /* Blue on active */
+    border-bottom: 2px solid #007BFF;
+}
+
+/* Tab Content */
+.tabcontent {
+    display: none;
+    padding: 20px;
+    background-color: #E0E0E0; /* Light background for content */
+    border-radius: 8px;
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #F0F0F0; /* Light background for skills */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    width: 120px;
+}
+.skill-item img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+.skill-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333; /* Dark text for skills */
+}
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+/* Timeline */
+.timeline {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #E0E0E0; /* Light background for timeline */
+    border-radius: 8px;
+}
+.timeline-item {
+    background: #F0F0F0; /* Light background for timeline items */
+    border: 1px solid #CCC;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 200px;
+    flex: 0 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #007BFF; /* Blue for dates */
+}
+.timeline-content h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #333; /* Dark text for titles */
+}
+.timeline-content p {
+    margin: 0 0 10px 0;
+    font-size: 0.9em;
+    color: #666; /* Grey text for details */
+}
+
+/* Contact Info */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.contact-item img.icon,
+.contact-item img.copy {
+    width: 20px;
+    height: 20px;
+}
+.contact-item .contact-text {
+    margin: 0 20px;
+    line-height: 20px;
+    color: #333; /* Dark text for contact */
+}
+.contact-item img.copy {
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #004080; /* Blue footer */
+    padding: 20px;
+    text-align: center;
+    color: #F0F0F0; /* Light text for footer */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
