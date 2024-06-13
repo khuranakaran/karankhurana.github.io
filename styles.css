@@ -56,7 +56,7 @@ header.collapsed p, header.collapsed .social-media-icons {
 }
 .profile-picture {
     border-radius: 50%;
-    width: 150px;
+    width: 130px;
     height: 150px;
     margin-right: 10px;
     transition: width 0.3s ease, height 0.3s ease, margin-right 0.3s ease;
