@@ -4,14 +4,16 @@ body, header, nav, section, h2, p {
     padding: 0;
 }
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 /* Header Styles */
 #header {
     display: flex;
     align-items: center;
-    background-color: #4CAF50;
+    background-color: #003366; /* Dark Blue */
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -76,7 +78,7 @@ header.collapsed .profile-picture {
 /* Download Resume Button */
 .download-resume-btn {
     background-color: #fff;
-    color: #4CAF50;
+    color: #003366;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -88,7 +90,7 @@ header.collapsed .profile-picture {
     display: inline-block;
 }
 .download-resume-btn:hover {
-    background-color: #4CAF50;
+    background-color: #003366;
     color: #fff;
 }
 header.collapsed .download-resume-btn {
@@ -117,7 +119,7 @@ header.collapsed .social-media-icons {
 
 /* Navigation Container */
 .nav-container {
-    background-color: #333;
+    background-color: #004080; /* Light Blue */
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -193,8 +195,8 @@ nav ul li a {
     color: #555;
 }
 .tab button:hover, .tab button.active {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
+    color: #003366;
+    border-bottom: 2px solid #003366;
 }
 
 /* Tab Content */
@@ -215,7 +217,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #f7f7f7;
+    background-color: #e6f2ff; /* Very Light Blue */
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
