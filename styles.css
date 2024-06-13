@@ -272,21 +272,21 @@ nav ul li a {
 /* Contact Info */
 .contact-info {
     display: flex;
-    flex-direction: row;
-    align-items: left;
-    justify-content: left;
+    flex-direction: column;
+    align-items: flex-start;
     margin-right: 10px;
 }
 .contact-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    display: inline-block;
 }
-.contact-item img,
-.copy-icon {
-    margin-left: 10px;
+.contact-item img {
+    margin-right: 10px;
 }
-.copy-icon {
+.contact-text {
+    margin-right: 10px;
+}
+.copy {
     cursor: pointer;
 }
