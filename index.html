@@ -3,369 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Karan Khurana</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header id="header">
+    <header id="header">
         <div class="profile-container">
-            <img src="images/KaranKhurana.JPG" alt="Profile Picture" class="profile-picture">
+            <img src="images/profile-picture.jpg" alt="Profile Picture" class="profile-picture">
             <div class="header-content">
-                <h1>Karan Khurana</h1>
-                <p>Seasoned Software Leader | Android, Flutter & iOS Developer</p>
+                <h1>Your Name</h1>
+                <p>Short Bio</p>
+                <a href="resume.pdf" class="download-resume-btn">Download Resume</a>
                 <div class="social-media-icons">
-                    <a href="https://www.linkedin.com/in/kkhuranaa/" target="_blank" class="fa fa-linkedin"></a>
-                    <a href="https://github.com/khuranakaran" target="_blank" class="fa fa-github"></a>
-                    <a href="https://x.com/khuranakaran18" target="_blank" class="fa fa-twitter"></a>
-                    <a href="https://www.facebook.com/kkhurana18/" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/kkhurana_" target="_blank" class="fa fa-instagram"></a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
                 </div>
             </div>
         </div>
-<a href="/assets/resume/Resume_KaranKhurana_9years_MobileDeveloper_8860914345.pdf" download="Resume_KaranKhurana_9years_MobileDeveloper_8860914345.pdf" class="download-resume-btn">
-    <img src="/images/ic_download.png" alt="Download Resume Icon" class="download-resume-icon">
-    Download Resume
-</a>
     </header>
-    <nav class="nav-container">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-<div class="main-content">
-    <div class="side-by-side-container">
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a seasoned software leader with nine years of extensive expertise in Android, Flutter, and iOS development. Throughout my career, I have consistently demonstrated my ability to engage with clients and lead teams to success. I am currently advancing my strategic acumen and leadership capabilities through an MBA program at IIM Kozhikode, a pursuit that reflects my commitment to continuous improvement and excellence in the field.<br>
 
-<br>With a proven track record in mobile development, I bring a wealth of knowledge in creating robust and scalable applications. My technical skills are complemented by my leadership abilities, allowing me to mentor and guide teams to achieve high standards of productivity and collaboration. I am proficient in a variety of programming languages and frameworks, with a deep understanding of software development life cycle (SDLC) and agile methodologies.</p>
-    </section>
-    <section id="education">
-        <h2>Education</h2>
-        <div class="skills-container">
-        <div class="skill-item">
-            <img src="images/ic_mdu.png" alt="Android">
-            <p><strong>IIM, Kozhikode</strong></p>
-             <p>MBA</p>
-            <p>2023 - 2025</p>
-        </div>
-        <div class="skill-item">
-            <img src="images/ic_iimk.png" alt="Android">
-            <p><strong>M.D.U, Rohtak</strong></p>
-             <p>B.Tech in CSE</p>
-            <p>2011 - 2015</p>
-        </div>
-        </div>
-    </section>
+    <div class="nav-container">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </div>
-    <section id="experience">
-        <h2>Technology Stack</h2>
-        <div class="dashboard">
-            <div class="tab">
-                <button class="tablinks" onclick="openTab(event, 'mobile')">Mobile Development</button>
-                <button class="tablinks" onclick="openTab(event, 'software')">Software Development</button>
-                <button class="tablinks" onclick="openTab(event, 'devops')">DevOps</button>
-            </div>
-            <div id="mobile" class="tabcontent">
-                <h3>Mobile Development</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <img src="images/android.png" alt="Android">
-                        <p>Android</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/kotlin.png" alt="Kotlin">
-                        <p>Kotlin</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/flutter.png" alt="Flutter">
-                        <p>Flutter</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/java.png" alt="Flutter">
-                        <p>Java</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/dart.png" alt="Flutter">
-                        <p>Dart</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/apple.png" alt="iOS">
-                        <p>iOS</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/swift.png" alt="Swift">
-                        <p>Swift</p>
-                    </div>
-                </div>
-            </div>
-            <div id="software" class="tabcontent">
-                <h3>Software Development</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <img src="images/java.png" alt="Java">
-                        <p>Java</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/sdlc.png" alt="SDLC">
-                        <p>SDLC</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/restful_apis.png" alt="RESTful APIs">
-                        <p>RESTful APIs</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/graphql.png" alt="GraphQL">
-                        <p>GraphQL</p>
-                    </div>
-                </div>
-            </div>
-            <div id="devops" class="tabcontent">
-                <h3>DevOps</h3>
-                <div class="skills-container">
-                    <div class="skill-item">
-                        <img src="images/gitlab.png" alt="Terraform">
-                        <p>Gitlab</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/cicd.png" alt="CI/CD">
-                        <p>CI/CD</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/docker.png" alt="Version Control (Git)">
-                        <p>Docker</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/kubernetes.png" alt="Version Control (Git)">
-                        <p>Kubernetes</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/azure.png" alt="Version Control (Git)">
-                        <p>Azure</p>
-                    </div>
-                    <div class="skill-item">
-                        <img src="images/aws.png" alt="Version Control (Git)">
-                        <p>AWS</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-    <h2>Development Portfolio</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Customer Journey</h3>
-                <p><strong>Platform:</strong> Android, Web, and mobile web application</p>
-                <p>Customer Journey is a platform where individuals who have been declined for business loans are redirected. Here, they are presented with options such as gold loans, personal loans, home loans, and more. This innovative application, built with Flutter, seamlessly connects users across mobile and web platforms, ensuring accessibility and convenience for all.</p>
-                <p><a href="#">Website Link</a></p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Collec10</h3>
-                <p><strong>Platform:</strong> Web and mobile web application</p>
-                <p>Collec10, built on Flutter, boasts features such as integrated calling capabilities and socket functionality. This advanced platform empowers calling agents to efficiently communicate with clients and manage business loan applications in real-time. By leveraging these features, Collec10 enhances connectivity and responsiveness, ensuring seamless interactions between agents and applicants.</p>
-                <p><a href="#">Website Link</a></p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Lender-onboarding</h3>
-                <p><strong>Platform:</strong> Web and mobile web application</p>
-                <p>Lender-onboarding serves as a dynamic platform facilitating connections among lenders, providing them with access to view business loan applications. This innovative application, crafted with Flutter, offers seamless functionality across mobile and web platforms, ensuring ease of access and convenience for all users.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Buddy</h3>
-                <p><strong>Platform:</strong> Android and Web Application</p>
-                <p>Buddy is an innovative application designed to connect individuals. Developed with Flutter, it operates seamlessly across both mobile and web platforms, ensuring accessibility and convenience for all users.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Xlr8</h3>
-                <p><strong>Platform:</strong> Android and Web Application</p>
-                <p>Xlr8, a service provided by Lendingkart, is available in Android and Flutter products. Xlr8 enables individuals to generate income from home by serving as agents, offering financial products to customers, and earning commissions on each successful sale.</p>
-                <p><a href="#">Website Link</a></p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Nedbank Money</h3>
-                <p><strong>Platform:</strong> Android and iOS Application</p>
-                <p>Nedbank is one of the biggest banks in South Africa on which I developed new features such as family banking, etc. and maintenance of applications.</p>
-                <p><a href="#">Play Store Link</a> <a href="#">App Store Link</a></p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Aikyam</h3>
-                <p><strong>Platform:</strong> Android Application</p>
-                <p>Project involved development of applications providing services to users with complete tracks of their customers, projects and leads using kotlin, retrofit, rxJava, Coroutines and others.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>AlphaTRAK</h3>
-                <p><strong>Platform:</strong> Android Application</p>
-                <p>Project involved development of applications providing services to customers with complete tracking of their pet’s diabetes. The application could connect with a physical Bluetooth device and fetch data from the device. The application could also keep track of several other activities such as food intake, exercise, water intake, and several others based on those charts and data that was shown to customers and could contact veterinarians. The application is compatible with online and offline modes. Technologies used for development were kotlin, retrofit, rxJava, Coroutines and others.</p>
-                <p><a href="#">Play Store Link</a> <a href="#">App Store Link</a></p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Health Evaluation</h3>
-                <p><strong>Platform:</strong> Android Application</p>
-                <p>Project involved the development of applications providing services to users to keep track of animals in farms. Tracking included their food intake, medicines, disease (if any), health evaluations. Based on these evaluations, certain vaccinations could be given to animals. The application is compatible with online and offline modes.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Metrology Gate</h3>
-                <p><strong>Platform:</strong> Android Application</p>
-                <p>Metrology Gate revolutionizes factory management by providing a comprehensive platform for real-time monitoring and analysis of industrial machinery. This powerful tool enables factories to effortlessly track machine performance, measure efficiency in real-time, and identify downtimes. With access to historical data, users gain invaluable insights to optimize operations and enhance productivity. Metrology Gate empowers factories to streamline processes, reduce downtime, and maximize output with precision and efficiency.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Oxigen Wallet</h3>
-                <p><strong>Platform:</strong> Android & iOS Application</p>
-                <p>Project involved providing services, which included instant recharges, bill payments, wallet to bank and wallet to wallet transfer, gift cards, and many more useful features. It included working on multiple applications for Android, iOS, and retail agents (Android and iOS).</p>
-                <p><a href="#">Play Store Link</a></p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <h3>Genie</h3>
-                <p><strong>Platform:</strong> Android Application</p>
-                <p>Project involved development of an android chatbot application. It involved implementation of AI/ML. Airline, Movies, Cabs Integration</p>
-            </div>
-        </div>
+
+    <div class="main-content">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Your about me section.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Your education details.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Your projects.</p>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Your experience details.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Your contact information.</p>
+        </section>
     </div>
-</section>
-    <section id="experience">
-    <h2>Employment History</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-date">2022 - Present</div>
-            <div class="timeline-content">
-                <h3>Lendingkart, Bangalore</h3>
-                <p><strong>Role:</strong> Team Lead</p>
-                <p>Proficient in both Flutter and Android, adept at mentoring and leading teams to achieve project goals and maintain high standards of productivity and collaboration.</p>
-            </div>
-        </div>
-         <div class="timeline-item">
-            <div class="timeline-date">2021 - 2022</div>
-            <div class="timeline-content">
-                <h3>Nagarro, Gurgaon</h3>
-                <p><strong>Role:</strong> Senior Engineer</p>
-                <p>Responsible for the development of Android and iOS applications, including client interaction to gather requirements and ensure project delivery aligns with client expectations.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">2019 - 2021</div>
-            <div class="timeline-content">
-                <h3>Mobile Programming LLC, Gurgaon</h3>
-                <p><strong>Role:</strong> Senior Engineer</p>
-                <p>Leading the development of Android applications, including client engagement to gather project requirements and ensure successful delivery. Additionally, overseeing and managing a team to ensure project goals are met effectively.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">2019 - 2019</div>
-            <div class="timeline-content">
-                <h3>Mpower Softcomm Pvt Ltd, Gurgaon</h3>
-                <p><strong>Role:</strong> Senior Engineer</p>
-                <p>Proficiently develop and maintain Android and iOS applications, with a focus on financial applications. Skilled in implementing new features and ensuring ongoing maintenance to uphold optimal performance and user experience.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">2018 - 2019</div>
-            <div class="timeline-content">
-                <h3>Sowe Apps, Bengaluru</h3>
-                <p><strong>Role:</strong> Senior Software Engineer</p>
-                <p>Driving the development of Android applications while simultaneously managing teams, fostering community growth, and engaging with clients to ensure project alignment with their needs and expectations.</p>
-            </div>
-        </div>
-        <div class="timeline-item">
-            <div class="timeline-date">2015 - 2017</div>
-            <div class="timeline-content">
-                <h3>Neuron Inc., Gurgaon</h3>
-                <p><strong>Role:</strong> Engineer</p>
-                <p>Specialized in developing Android applications from inception to completion, including client engagement to gather requirements and deliver tailored projects. Recently, led the integration of airline services into the Genie application, enhancing its functionality and user experience.</p>
-            </div>
-        </div>
-    </div>
-</section>
-    <div class="side-by-side-container">
-    <section id="experience">
-    <h2>Contact</h2>
-    <div class="contact-info">
-        <!-- Email -->
-        <div class="contact-item">
-            <img src="images/ic_email.png" alt="Email" class="icon">
-            <p class="contact-text">khuranakaran18@gmail.com</p>
-            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyEmail()">
-        </div>
-        <!-- Phone -->
-        <div class="contact-item">
-            <img src="images/ic_phone.png" alt="Phone" class="icon">
-            <p class="contact-text">+918860914345</p>
-            <img src="images/ic_copy.png" alt="Copy" class="copy" onclick="copyPhone()">
-        </div>
-    </div>
-</section>
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <form id="contactForm" action="send_email.php" method="post">
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="name">Name:</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="phone">Phone:</label>
-                        <input type="tel" class="form-control" id="phone" name="phone" required>
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label for="email">Email:</label>
-                        <input type="email" class="form-control" id="email" name="email" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="company">Company:</label>
-                        <input type="text" class="form-control" id="company" name="company">
-                    </div>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" style="background-color: #4CAF50; color: white;">Send Message</button>
-        </form>
-    </section>
-</div>
-</div>
-</div>
-<footer>
-    <p>&copy; 2024 Karan Khurana. All rights reserved.</p>
-</footer>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
