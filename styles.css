@@ -4,16 +4,16 @@ body, header, nav, section, h2, p {
     padding: 0;
 }
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #121212;
+    color: #E0E0E0;
 }
 
 /* Header Styles */
 #header {
     display: flex;
     align-items: center;
-    background-color: #003366; /* Dark Blue */
+    background-color: #1F1F1F;
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -28,8 +28,9 @@ header.collapsed {
     padding: 10px;
 }
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     transition: font-size 0.3s ease;
+    font-weight: 700;
 }
 header.collapsed h1 {
     font-size: 1.5em;
@@ -77,8 +78,8 @@ header.collapsed .profile-picture {
 
 /* Download Resume Button */
 .download-resume-btn {
-    background-color: #fff;
-    color: #003366;
+    background-color: #BB86FC;
+    color: #121212;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -90,7 +91,7 @@ header.collapsed .profile-picture {
     display: inline-block;
 }
 .download-resume-btn:hover {
-    background-color: #003366;
+    background-color: #3700B3;
     color: #fff;
 }
 header.collapsed .download-resume-btn {
@@ -113,13 +114,16 @@ header.collapsed .social-media-icons {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 10px;
-    color: #fff;
+    color: #BB86FC;
     transition: color 0.3s;
+}
+.social-media-icons a:hover {
+    color: #3700B3;
 }
 
 /* Navigation Container */
 .nav-container {
-    background-color: #004080; /* Light Blue */
+    background-color: #333;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -145,6 +149,10 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: #BB86FC;
 }
 
 /* Main Content */
@@ -169,6 +177,7 @@ nav ul li a {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
+    color: #BB86FC;
 }
 
 /* Responsive Design */
@@ -192,17 +201,19 @@ nav ul li a {
     transition: 0.3s;
     font-size: 18px;
     margin: 0 10px;
-    color: #555;
+    color: #E0E0E0;
 }
 .tab button:hover, .tab button.active {
-    color: #003366;
-    border-bottom: 2px solid #003366;
+    color: #BB86FC;
+    border-bottom: 2px solid #BB86FC;
 }
 
 /* Tab Content */
 .tabcontent {
     display: none;
     padding: 20px;
+    background-color: #1F1F1F;
+    border-radius: 8px;
 }
 
 /* Skills Container */
@@ -217,8 +228,8 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #e6f2ff; /* Very Light Blue */
-    padding: 10px;
+    background-color: #2C2C2C;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -232,7 +243,7 @@ nav ul li a {
 .skill-item p {
     margin: 0;
     font-size: 16px;
-    color: #333;
+    color: #E0E0E0;
 }
 .skill-item:hover {
     transform: translateY(-10px);
@@ -244,10 +255,12 @@ nav ul li a {
     overflow-x: auto;
     padding: 20px;
     margin-bottom: 20px;
+    background-color: #1F1F1F;
+    border-radius: 8px;
 }
 .timeline-item {
-    background: #fff;
-    border: 1px solid #ddd;
+    background: #2C2C2C;
+    border: 1px solid #333;
     padding: 20px;
     min-width: 300px;
     max-width: 200px;
@@ -258,17 +271,17 @@ nav ul li a {
 .timeline-date {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #999;
+    color: #BB86FC;
 }
 .timeline-content h3 {
     margin: 0 0 10px 0;
     font-size: 1.2em;
-    color: #333;
+    color: #E0E0E0;
 }
 .timeline-content p {
     margin: 0 0 10px 0;
     font-size: 0.9em;
-    color: #666;
+    color: #B0B0B0;
 }
 
 /* Contact Info */
@@ -291,7 +304,19 @@ nav ul li a {
 .contact-item .contact-text {
     margin: 0 20px;
     line-height: 20px;
+    color: #E0E0E0;
 }
 .contact-item img.copy {
     cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #1F1F1F;
+    padding: 20px;
+    text-align: center;
+    color: #B0B0B0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
