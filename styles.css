@@ -281,17 +281,15 @@ nav ul li a {
     align-items: center;
     margin-bottom: 10px;
 }
-.contact-item .icon,
-.contact-item .copy {
+.contact-item img.icon,
+.contact-item img.copy {
     width: 20px;
     height: 20px;
 }
-.contact-item .icon {
-    margin-right: 10px;
-}
 .contact-item .contact-text {
-    margin-right: 10px;
+    margin: 0 10px;
+    line-height: 20px;
 }
-.contact-item .copy {
+.contact-item img.copy {
     cursor: pointer;
 }
