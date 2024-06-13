@@ -272,7 +272,7 @@ nav ul li a {
 /* Contact Info */
 .contact-info {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     justify-content: left;
     margin-right: 10px;
