@@ -234,8 +234,106 @@ nav ul li a:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Adjust header for mobile */
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header.collapsed h1 {
+        font-size: 1.2em;
+    }
+
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+        margin: 0 0 10px 0;
+    }
+
+    header.collapsed .profile-picture {
+        width: 40px;
+        height: 40px;
+    }
+
+    .download-resume-btn {
+        font-size: 0.75em;
+        padding: 8px 16px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    header.collapsed .download-resume-btn {
+        font-size: 0.6em;
+        padding: 4px 8px;
+    }
+
+    .social-media-icons a {
+        font-size: 1.2em;
+    }
+
+    /* Adjust navigation for mobile */
+    .nav-container {
+        padding: 5px 0;
+    }
+
+    /* Main content adjustments */
+    .main-content {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    /* Side-by-side container adjustments */
     .side-by-side-container {
         flex-direction: column;
+    }
+
+    #about,
+    #education,
+    #projects,
+    #experience,
+    #contact {
+        margin-top: 20px;
+        padding: 10px;
+    }
+
+    /* Tab styles */
+    .tab {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .tab button {
+        font-size: 16px;
+        padding: 8px 10px;
+        margin: 5px 0;
+    }
+
+    /* Timeline adjustments */
+    .timeline {
+        flex-direction: column;
+    }
+
+    .timeline-item {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Contact info adjustments */
+    .contact-info {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .contact-item {
+        margin-bottom: 10px;
     }
 }
 
@@ -286,7 +384,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: #2C2C2C;
     padding: 20px;
-    border-radius: 10px;
+    border-radius    : 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 120px;
