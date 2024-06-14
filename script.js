@@ -127,26 +127,34 @@ document.addEventListener('scroll', function () {
 });
 
 $(document).ready(function() {
-    $(window).scroll(function() {
-        // Check scroll position
-        var scroll = $(window).scrollTop();
+    // Function to check if an element is in viewport
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
 
-        // Header effects
-        if (scroll > 50) { // Example threshold, adjust as needed
-            $('header').addClass('collapsed');
-            $('.nav-container').addClass('scrolled');
-        } else {
-            $('header').removeClass('collapsed');
-            $('.nav-container').removeClass('scrolled');
-        }
-
-        // Other animations based on scroll position
+    // Function to handle animations
+    function handleAnimations() {
         $('.timeline-item, .skill-item').each(function() {
-            var position = $(this).offset().top;
-            if (scroll > position - $(window).height() + 100) {
+            if (isElementInViewport(this)) {
                 $(this).addClass('animate');
+            } else {
+                $(this).removeClass('animate'); // Optional: Remove class when out of view
             }
         });
+    }
+
+    // Initial check on page load
+    handleAnimations();
+
+    // Check on scroll and resize
+    $(window).on('scroll resize', function() {
+        handleAnimations();
     });
 });
 
