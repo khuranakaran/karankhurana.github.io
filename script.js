@@ -126,7 +126,29 @@ document.addEventListener('scroll', function () {
     }
 });
 
+$(document).ready(function() {
+    $(window).scroll(function() {
+        // Check scroll position
+        var scroll = $(window).scrollTop();
 
+        // Header effects
+        if (scroll > 50) { // Example threshold, adjust as needed
+            $('header').addClass('collapsed');
+            $('.nav-container').addClass('scrolled');
+        } else {
+            $('header').removeClass('collapsed');
+            $('.nav-container').removeClass('scrolled');
+        }
+
+        // Other animations based on scroll position
+        $('.timeline-item, .skill-item').each(function() {
+            var position = $(this).offset().top;
+            if (scroll > position - $(window).height() + 100) {
+                $(this).addClass('animate');
+            }
+        });
+    });
+});
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
