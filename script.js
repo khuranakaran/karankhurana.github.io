@@ -140,7 +140,7 @@ $(document).ready(function() {
 
     // Function to handle animations
     function handleAnimations() {
-        $('.timeline-item, .skill-item').each(function() {
+        $('.timeline-item').each(function() {
             if (isElementInViewport(this)) {
                 $(this).addClass('animate');
             } else {
