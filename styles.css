@@ -279,7 +279,7 @@ nav ul li a:hover {
         font-size: 1.2em;
     }
      .nav-container {
-        top: 100px; /* Ensure navigation is pushed below the header */
+        top: 200px; /* Ensure navigation is pushed below the header */
     }
 
     header.collapsed + .nav-container {
@@ -290,7 +290,7 @@ nav ul li a:hover {
     .main-content {
         margin-top: 150px; /* Ensure content is pushed below the header */
         margin-bottom: 50px;
-        padding-top: 120px; /* Add padding to push content below header */
+        padding-top: 160px; /* Add padding to push content below header */
     }
 
     /* Side-by-side container adjustments */
