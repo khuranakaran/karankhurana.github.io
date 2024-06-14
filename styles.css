@@ -338,7 +338,7 @@ footer {
     text-align: center;
     color: #B0B0B0;
     position: fixed;
-    margin-top: 50px;
+    margin-top: 200px;
     width: 100%;
     bottom: 0;
     z-index: 9999; /* Ensure the footer is above other content */
