@@ -5,7 +5,7 @@ body, header, nav, section, h2, p {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background: linear-gradient(135deg, #121212, #1F1F1F);
+    background: linear-gradient(135deg, #121212, #000000);
     color: #E0E0E0;
     margin: 0;
     padding: 0;
