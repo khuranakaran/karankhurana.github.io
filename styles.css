@@ -288,6 +288,7 @@ nav ul li a:hover {
     .main-content {
         margin-top: 150px;
         margin-bottom: 50px;
+        padding-top: 50px; /* Add padding to push content below header */
     }
 
     /* Side-by-side container adjustments */
@@ -384,7 +385,7 @@ nav ul li a:hover {
     text-align: center;
     background-color: #2C2C2C;
     padding: 20px;
-    border-radius    : 10px;
+    border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 120px;
