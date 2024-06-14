@@ -287,14 +287,12 @@ nav ul li a:hover {
     min-width: 200px; /* Ensure a minimum width */
 }
 
-/* Initial state */
 .timeline-item, .skill-item {
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(20px); /* Start slightly above and animate down */
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-/* Animated state */
 .timeline-item.animate, .skill-item.animate {
     opacity: 1;
     transform: translateY(0);
