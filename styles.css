@@ -5,8 +5,10 @@ body, header, nav, section, h2, p {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #121212;
+    background: linear-gradient(135deg, #121212, #1F1F1F);
     color: #E0E0E0;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header Styles */
