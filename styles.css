@@ -170,8 +170,13 @@ nav ul li a:hover {
 }
 #about, #education, #projects, #experience, #contact {
     flex: 1;
+    color: #E0E0E0;
     margin-top: 50px;
     padding: 10px 20px;
+}
+
+#about p {
+    color: #E0E0E0; /* Override paragraph text color if needed */
 }
 
 /* Section Headers */
