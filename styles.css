@@ -34,6 +34,7 @@ body::after {
     display: flex;
     align-items: center;
     padding: 20px;
+    background: linear-gradient(135deg, #1A1A1A, #333333);
     position: fixed;
     width: 100%;
     z-index: 1000;
@@ -83,7 +84,7 @@ header.collapsed .social-media-icons {
 
 .profile-picture {
     border-radius: 50%;
-    width: 130px;
+    width: 145px;
     height: 150px;
     margin-right: 10px;
     transition: width 0.3s ease, height 0.3s ease, margin-right 0.3s ease;
