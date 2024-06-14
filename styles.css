@@ -5,15 +5,29 @@ body, header, nav, section, h2, p {
 }
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #E0E0E0; /* Light text */
+    background: linear-gradient(135deg, #1A1A1A, #333333);
+    color: #E0E0E0;
+    margin: 0;
+    padding: 0;
+    position: relative; /* Ensure the body is relative for absolute positioning */
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2); /* Adjust opacity for glossy effect */
+    pointer-events: none; /* Ensure the pseudo-element doesn't intercept clicks */
 }
 
 /* Header Styles */
 #header {
     display: flex;
     align-items: center;
-    background-color: #1F1F1F; /* Darker header */
+    background: linear-gradient(135deg, #1A1A1A, #333333);
     padding: 20px;
     position: fixed;
     width: 100%;
