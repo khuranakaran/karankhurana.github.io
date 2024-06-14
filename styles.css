@@ -318,24 +318,21 @@ nav ul li a:hover {
     transform: translateY(-10px);
 }
 
+/* Timeline */
 .timeline {
     display: flex;
-    overflow-x: auto; /* Enable horizontal scrolling */
-    overflow-y: hidden; /* Disable vertical scrolling */
-    white-space: nowrap; /* Keep items in a single line */
+    overflow-x: auto;
     padding: 20px;
     margin-bottom: 20px;
     background-color: #1F1F1F;
     border-radius: 8px;
-    width: 100%; /* Ensure full width */
 }
-
 .timeline-item {
     background: #2C2C2C;
     border: 1px solid #333;
     padding: 20px;
-    min-width: 300px; /* Adjust based on content */
-    max-width: 200px; /* Adjust based on design */
+    min-width: 300px;
+    max-width: 200px;
     flex: 0 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
