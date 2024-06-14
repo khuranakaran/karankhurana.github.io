@@ -9,6 +9,18 @@ body {
     color: #E0E0E0;
     margin: 0;
     padding: 0;
+    position: relative; /* Ensure the body is relative for absolute positioning */
+}
+
+body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1); /* Adjust opacity for glossy effect */
+    pointer-events: none; /* Ensure the pseudo-element doesn't intercept clicks */
 }
 
 /* Header Styles */
@@ -326,7 +338,8 @@ footer {
     text-align: center;
     color: #B0B0B0;
     position: fixed;
-     margin-top: 50px;
+    margin-top: 50px;
     width: 100%;
     bottom: 0;
+    z-index: 9999; /* Ensure the footer is above other content */
 }
