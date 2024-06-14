@@ -196,7 +196,7 @@ nav ul li a:hover {
 /* Main Content */
 .main-content {
     margin-top: 200px;
-    margin-bottom: 100px; /* Adjust margin-bottom to accommodate footer */
+    margin-bottom: 140px; /* Adjust margin-bottom to accommodate footer */
 }
 
 /* Side by Side Container */
@@ -278,17 +278,19 @@ nav ul li a:hover {
     .social-media-icons a {
         font-size: 1.2em;
     }
+     .nav-container {
+        top: 100px; /* Ensure navigation is pushed below the header */
+    }
 
-    /* Adjust navigation for mobile */
-    .nav-container {
-        padding: 5px 0;
+    header.collapsed + .nav-container {
+        top: 70px;
     }
 
     /* Main content adjustments */
     .main-content {
-        margin-top: 150px;
+        margin-top: 150px; /* Ensure content is pushed below the header */
         margin-bottom: 50px;
-        padding-top: 50px; /* Add padding to push content below header */
+        padding-top: 120px; /* Add padding to push content below header */
     }
 
     /* Side-by-side container adjustments */
