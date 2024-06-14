@@ -1,8 +1,14 @@
 /* Global Styles */
-body, header, nav, section, h2, p {
+body,
+header,
+nav,
+section,
+h2,
+p {
     margin: 0;
     padding: 0;
 }
+
 body {
     font-family: 'Montserrat', sans-serif;
     background: linear-gradient(135deg, #1A1A1A, #333333);
@@ -19,7 +25,7 @@ body::after {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.2); /* Adjust opacity for glossy effect */
+    background: rgba(255, 255, 255, 0.1); /* Adjust opacity for glossy effect */
     pointer-events: none; /* Ensure the pseudo-element doesn't intercept clicks */
 }
 
@@ -27,7 +33,6 @@ body::after {
 #header {
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, #1A1A1A, #333333);
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -38,22 +43,29 @@ body::after {
     justify-content: center;
     text-align: center;
 }
+
 header.collapsed {
     padding: 10px;
 }
+
 header h1 {
     font-size: 2.5em;
     transition: font-size 0.3s ease;
     font-weight: 700;
 }
+
 header.collapsed h1 {
     font-size: 1.5em;
 }
-header p, .social-media-icons {
+
+header p,
+.social-media-icons {
     opacity: 1;
     transition: opacity 0.3s ease;
 }
-header.collapsed p, header.collapsed .social-media-icons {
+
+header.collapsed p,
+header.collapsed .social-media-icons {
     opacity: 0;
     height: 0;
     overflow: hidden;
@@ -68,6 +80,7 @@ header.collapsed p, header.collapsed .social-media-icons {
     justify-content: center;
     width: 100%;
 }
+
 .profile-picture {
     border-radius: 50%;
     width: 130px;
@@ -75,6 +88,7 @@ header.collapsed p, header.collapsed .social-media-icons {
     margin-right: 10px;
     transition: width 0.3s ease, height 0.3s ease, margin-right 0.3s ease;
 }
+
 header.collapsed .profile-picture {
     width: 50px;
     height: 50px;
@@ -92,8 +106,8 @@ header.collapsed .profile-picture {
 
 /* Download Resume Button */
 .download-resume-btn {
-    background-color: #BB86FC; /* Accent color */
-    color: #121212; /* Dark text */
+    background-color: #BB86FC;
+    color: #121212;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -104,10 +118,12 @@ header.collapsed .profile-picture {
     transition: background-color 0.3s ease, color 0.3s ease;
     display: inline-block;
 }
+
 .download-resume-btn:hover {
-    background-color: #3700B3; /* Darker accent on hover */
+    background-color: #3700B3;
     color: #fff;
 }
+
 header.collapsed .download-resume-btn {
     font-size: 0.75em;
     padding: 5px 10px;
@@ -121,23 +137,26 @@ header.collapsed .download-resume-btn {
     margin-top: 10px;
     transition: margin-top 0.3s ease;
 }
+
 header.collapsed .social-media-icons {
     margin-top: 0;
 }
+
 .social-media-icons a {
     text-decoration: none;
     font-size: 1.5em;
     margin: 0 10px;
-    color: #BB86FC; /* Accent color */
+    color: #BB86FC;
     transition: color 0.3s;
 }
+
 .social-media-icons a:hover {
-    color: #3700B3; /* Darker accent on hover */
+    color: #3700B3;
 }
 
 /* Navigation Container */
 .nav-container {
-    background-color: #333; /* Dark nav background */
+    background-color: #333;
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -146,6 +165,7 @@ header.collapsed .social-media-icons {
     z-index: 999;
     transition: top 0.3s ease;
 }
+
 header.collapsed + .nav-container {
     top: 50px;
 }
@@ -156,22 +176,26 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav ul li {
     display: inline;
     margin: 0 10px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: 500;
 }
+
 nav ul li a:hover {
-    color: #BB86FC; /* Accent color on hover */
+    color: #BB86FC;
 }
 
 /* Main Content */
 .main-content {
     margin-top: 200px;
+    margin-bottom: 100px; /* Adjust margin-bottom to accommodate footer */
 }
 
 /* Side by Side Container */
@@ -180,18 +204,31 @@ nav ul li a:hover {
     justify-content: space-between;
     gap: 20px;
 }
-#about, #education, #projects, #experience, #contact {
+
+#about,
+#education,
+#projects,
+#experience,
+#contact {
     flex: 1;
+    color: #E0E0E0;
     margin-top: 50px;
     padding: 10px 20px;
 }
 
+#about p {
+    color: #E0E0E0; /* Override paragraph text color if needed */
+}
+
 /* Section Headers */
-#about h2, #education h2, #experience h2, #contact h2 {
+#about h2,
+#education h2,
+#experience h2,
+#contact h2 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
-    color: #BB86FC; /* Accent color */
+    color: #FFFFFF;
 }
 
 /* Responsive Design */
@@ -207,6 +244,7 @@ nav ul li a:hover {
     justify-content: center;
     margin-bottom: 20px;
 }
+
 .tab button {
     background-color: transparent;
     border: none;
@@ -215,10 +253,12 @@ nav ul li a:hover {
     transition: 0.3s;
     font-size: 18px;
     margin: 0 10px;
-    color: #E0E0E0; /* Light text */
+    color: #E0E0E0;
 }
-.tab button:hover, .tab button.active {
-    color: #BB86FC; /* Accent color */
+
+.tab button:hover,
+.tab button.active {
+    color: #BB86FC;
     border-bottom: 2px solid #BB86FC;
 }
 
@@ -226,7 +266,7 @@ nav ul li a:hover {
 .tabcontent {
     display: none;
     padding: 20px;
-    background-color: #1F1F1F; /* Dark content background */
+    background-color: #1F1F1F;
     border-radius: 8px;
 }
 
@@ -237,28 +277,33 @@ nav ul li a:hover {
     justify-content: space-around;
     gap: 20px;
 }
+
 .skill-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background-color: #2C2C2C; /* Dark background */
+    background-color: #2C2C2C;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 120px;
+    min-width: 200px; /* Ensure a minimum width */
 }
+
 .skill-item img {
     width: 50px;
     height: auto;
     margin-bottom: 10px;
 }
+
 .skill-item p {
     margin: 0;
     font-size: 16px;
-    color: #E0E0E0; /* Light text */
+    color: #E0E0E0;
 }
+
 .skill-item:hover {
     transform: translateY(-10px);
 }
@@ -269,11 +314,12 @@ nav ul li a:hover {
     overflow-x: auto;
     padding: 20px;
     margin-bottom: 20px;
-    background-color: #1F1F1F; /* Dark background */
+    background-color: #1F1F1F;
     border-radius: 8px;
 }
+
 .timeline-item {
-    background: #2C2C2C; /* Dark background */
+    background: #2C2C2C;
     border: 1px solid #333;
     padding: 20px;
     min-width: 300px;
@@ -282,20 +328,23 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
 }
+
 .timeline-date {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #BB86FC; /* Accent color */
+    color: #BB86FC;
 }
+
 .timeline-content h3 {
     margin: 0 0 10px 0;
     font-size: 1.2em;
-    color: #E0E0E0; /* Light text */
+    color: #E0E0E0;
 }
+
 .timeline-content p {
     margin: 0 0 10px 0;
     font-size: 0.9em;
-    color: #B0B0B0; /* Light grey text */
+    color: #B0B0B0;
 }
 
 /* Contact Info */
@@ -304,22 +353,27 @@ nav ul li a:hover {
     flex-direction: column;
     align-items: flex-start;
     margin-right: 20px;
+    margin-right: 50px;
 }
+
 .contact-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .contact-item img.icon,
 .contact-item img.copy {
     width: 20px;
     height: 20px;
 }
+
 .contact-item .contact-text {
     margin: 0 20px;
     line-height: 20px;
-    color: #E0E0E0; /* Light text */
+    color: #E0E0E0;
 }
+
 .contact-item img.copy {
     cursor: pointer;
 }
