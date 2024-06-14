@@ -284,12 +284,17 @@ nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     width: 120px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
     min-width: 200px; /* Ensure a minimum width */
 }
 
+/* Initial state */
+.timeline-item, .skill-item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Animated state */
 .timeline-item.animate, .skill-item.animate {
     opacity: 1;
     transform: translateY(0);
@@ -335,9 +340,6 @@ nav ul li a:hover {
     flex: 0 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 20px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .timeline-date {
