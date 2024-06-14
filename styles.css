@@ -252,36 +252,73 @@ nav ul li a:hover {
 /* Timeline */
 .timeline {
     display: flex;
-    overflow-x: auto;
-    padding: 20px;
-    margin-bottom: 20px;
-    background-color: #1F1F1F; /* Dark background */
-    border-radius: 8px;
+    flex-direction: column;
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: #BB86FC; /* Accent color */
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    margin-left: -1.5px;
 }
 .timeline-item {
-    background: #2C2C2C; /* Dark background */
-    border: 1px solid #333;
     padding: 20px;
-    min-width: 300px;
-    max-width: 200px;
-    flex: 0 0 auto;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
+    border-radius: 6px;
+    background-color: #1F1F1F; /* Dark background */
+    color: white;
+    position: relative;
+    width: 80%;
+    margin: 10px 0;
 }
-.timeline-date {
-    font-weight: bold;
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: #BB86FC; /* Accent color */
+    border: 3px solid #1F1F1F; /* Dark background */
+    top: 20px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #BB86FC; /* Accent color */
+    top: 20px;
+    left: -35px;
+}
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+.timeline-item:nth-child(even) {
+    left: 20%;
+}
+.timeline-item h3 {
+    font-size: 1.2em;
     margin-bottom: 10px;
     color: #BB86FC; /* Accent color */
 }
-.timeline-content h3 {
-    margin: 0 0 10px 0;
-    font-size: 1.2em;
-    color: #E0E0E0; /* Light text */
-}
-.timeline-content p {
-    margin: 0 0 10px 0;
+.timeline-item p {
     font-size: 0.9em;
     color: #B0B0B0; /* Light grey text */
+}
+.timeline-date {
+    position: absolute;
+    left: -70px;
+    font-size: 1em;
+    color: #BB86FC; /* Accent color */
+    top: 20px;
 }
 
 /* Contact Info */
